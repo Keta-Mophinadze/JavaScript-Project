@@ -1,0 +1,73 @@
+@media (max-width:1024px) {
+    .header-span-tag {
+        display: none;
+    }
+    .fa-user,
+    .fa-bag-shopping,
+    .fa-heart {
+        font-size: 1.063rem;
+    }
+    .fa-book-open-reader {
+        margin-right: 0.938rem;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .header-section-wrapper {
+        padding-left: 0.313rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width:480px) {
+    .fa-magnifying-glass {
+        right: 15%;
+    }
+    .header-icon-wrapper {
+        display: none;
+    }
+    .fa-book-open-reader {
+        margin-right: 1.875rem;
+    }
+    .ul-item {
+        display: none;
+    }
+    .burger-bar {
+        display: block;
+    }
+
+    
+}
+
+
+
+
+
+
+
+@media (max-width:320px) {
+    .burger-bar {
+        width: 1.875rem;
+        height: 2.5rem;
+    }
+    
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-section-wrapper">
+        <div>
+          <a href="index.html">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </a>
+        </div>
+        <div class="header-input-wrapper">
+          <form action="/search" method="GET">
+            <label for="searchInput"></label>
+            <input
+              type="search"
+              name="search"
+              id="searchInput"
+              placeholder="Search Books"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="header-icon-wrapper">
+          <div>
+            <i class="fa-regular fa-user"></i>
+            <a href="account.html" target="_blank">
+              <span class="header-span-tag inter">Account</span>
+            </a>
+          </div>
+          <div class="small-line"></div>
+
+          <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="header-span-tag inter">Cart: (0€)</span>
+          </div>
+          <div class="small-line"></div>
+
+          <div>
+            <i class="fa-regular fa-heart"></i>
+            <span class="header-span-tag inter">Wishlist</span>
+          </div>
+        </div>
+      </div>
+      <hr class="header-line" />
+      <!-- NAVIGATION -->
+      <div class="header-navigation-wrapper">
+        <nav>
+          <ul class="ul-item inter" id="ul-nav">
+            <li>
+              <a class="header-a-item home" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="header-a-item about-us" href="about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="header-a-item books" href="books.html">Books</a>
+            </li>
+            <li>
+              <a class="header-a-item blog" href="blog.html">Blog </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-bar" id="burgerBar">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </div>
+    </header>
+    <!-- REGISTRATION FORM -->
+    <main>
+      <section>
+        <div class="sign-up-block">
+          <h3 class="roboto">Sign Up</h3>
+          <div class="apple-div">
+            <i class="fa-brands fa-apple"></i>
+            <span class="roboto">Continue With Apple</span>
+          </div>
+          <div class="fb-div">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="roboto">Continue With Facebook</span>
+          </div>
+
+          <p class="roboto account-text">OR CREATE AN ACCOUNT</p>
+        </div>
+        <div class="form-wrapper">
+          <form class="form-element" action="" id="registration">
+            <div class="input-wrapper">
+              <label class="roboto label-item" for="myname">First Name</label>
+
+              <input class="input-item" type="text" name="myname" id="myname" />
+              <p class="error-text roboto" id="error-myname"></p>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="roboto label-item" for="mylastname"
+                >Last Name</label
+              >
+              <input
+                class="input-item"
+                type="text"
+                name="mylastname"
+                id="mylastname"
+              />
+              <p class="error-text roboto" id="error-mylastname"></p>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="roboto label-item" for="myemail">Email</label>
+              <input
+                class="input-item"
+                type="email"
+                name="myemail"
+                id="myemail"
+              />
+              <p class="error-text roboto" id="error-myemail"></p>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="roboto label-item" for="mypassword">Password</label>
+              <input
+                class="input-item"
+                type="password"
+                name="mypassword"
+                id="mypassword"
+              />
+              <p class="error-text roboto" id="error-mypassword"></p>
+            </div>
+
+            <div class="input-wrapper">
+              <label class="roboto label-item" for="mypassword2"
+                >Repeat Password</label
+              >
+              <input
+                class="input-item"
+                type="password"
+                name="mypassword2"
+                id="mypassword2"
+              />
+              <p class="error-text roboto" id="error-mypassword2"></p>
+            </div>
+
+            <div class="check-box-wrapper">
+              <label for="checkBox"></label>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="check"
+                id="checkBox"
+              />
+
+              <p class="roboto checkbox-text">
+                I have read and agree to the
+                <span class="terms">Terms and Conditions</span>
+              </p>
+            </div>
+            <p class="error-text roboto" id="error-check"></p>
+            <button class="roboto submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-section-wrapper">
+            <div>
+                <a href="index.html">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </a>
+            </div>
+            <div class="header-input-wrapper">
+                <form action="/search" method="GET">
+                <label for="searchInput"></label>
+                <input type="search" name="search" id="searchInput" placeholder="Search Books">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                </form>
+            </div>
+            <div class="header-icon-wrapper">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="account.html" target="_blank">
+                        <span class="header-span-tag inter">Account</span>
+                    </a>
+                </div>
+                <div class="small-line"></div>
+
+                <div>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="header-span-tag inter">Cart: (0€)</span>
+                </div>
+                <div class="small-line"></div>
+
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="header-span-tag inter">Wishlist</span>
+                </div>
+            </div>
+            
+        </div>
+        <hr class="header-line">
+        <!-- NAVIGATION -->
+        <div class="header-navigation-wrapper">
+            <nav>
+                <ul class="ul-item inter" id="ul-nav">
+        
+                    <li>
+                        <a class="header-a-item home nav-active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="header-a-item about-us" href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="header-a-item books" href="books.html">Books</a>
+                    </li>
+                    <li>
+                        <a class="header-a-item blog" href="blog.html">Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-bar" id="burgerBar">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+
+            </div>
+
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

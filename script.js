@@ -17,11 +17,6 @@ formElement.addEventListener("submit", function (event) {
   if (userFirstName === "") {
     errors.myname = "Please complete this field";
   }
-  // LASTNAME
-  const lastName = document.getElementById("mylastname").value;
-  if (lastName === "") {
-    errors.mylastname = "Please complete this field";
-  }
 
   // EMAIL
   const emailValue = document.getElementById("myemail").value;
@@ -62,37 +57,51 @@ formElement.addEventListener("submit", function (event) {
   }
 });
 
-// // SHOW HIDDEN PASSWORD - ფუნქცია უნდა აღვწეროთ საბმით ფუნქციის გარეთ, რადგან დასაბმითების გარეშე გვინდა შესრულდეს მოქმედება
+const showPassword = document.getElementById("mypassword");
+const icon = document.getElementById("passwordIcon");
+icon.addEventListener("click", function () {
+  if (showPassword.type === "password") {
+    showPassword.setAttribute("type", "text");
+    icon.classList.remove("fa-eye");
+    icon.classList.add("fa-eye-slash");
+  } else {
+    showPassword.setAttribute("type", "password");
+    icon.classList.remove("fa-eye-slash");
+    icon.classList.add("fa-eye");
+  }
+});
 
-// let passwordShow = document.getElementById("passwordfield");
-// let icon = document.querySelector(".showIcon"); // Use querySelector to select the element by the showIcon class
-// icon.addEventListener("click", function () {
-//   if (passwordShow.type === "password") {
-//     passwordShow.setAttribute("type", "text");
-//     icon.classList.remove("fa-eye");
-//     icon.classList.add("fa-eye-slash");
-//   } else {
-//     passwordShow.setAttribute("type", "password");
-//     icon.classList.remove("fa-eye-slash");
-//     icon.classList.add("fa-eye");
-//   }
-// });
-// // EMAIL VALIDATION - REGEX - საბმით ივენთის გარეთ!
+const emailField = document.getElementById("myemail");
+emailField.addEventListener("keyup", function () {
+  const emailError = document.getElementById("emailError");
+  const emailValue = document.getElementById("myemail").value;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (emailValue.match(emailPattern)) {
+    emailError.textContent = "Email is valid";
+    emailError.style.color = "rgb(18, 117, 18)";
+  } else {
+    emailError.textContent = "Email is not valid";
+    emailError.style.color = "rgb(207, 19, 19)";
+  }
+  if (emailValue == "") {
+    emailError.innerHTML = " ";
+  }
+});
+const userNameField = document.getElementById('myname');
+userNameField.addEventListener('keyup', function () {
+  const userNameError = document.getElementById('userNameError');
+  const userNameValue = document.getElementById('myname').value;
+  const userNamePattern = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$/;
+  if (userNameValue.match(userNamePattern)) {
+    userNameError.textContent = "Username is valid";
+    userNameError.style.color = "rgb(18, 117, 18)";
+  } else {
+    userNameError.textContent = "Username is not valid";
+    userNameError.style.color = "rgb(207, 19, 19)";
+  }
+  if (userNameValue == "") {
+    userNameError.innerHTML = " ";
+  }
+  
+})
 
-// let emailField = document.getElementById("emailfield");
-// emailField.addEventListener("keyup", function () {
-//   const emailError = document.getElementById("emailError");
-//   let emailValue = document.getElementById("emailfield").value; // VALUE - გვაინტერესებს ის, რასაც მომხმარებელი ჩაწერს
-//   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-//   if (emailValue.match(emailPattern)) {
-//     emailError.textContent = "Email is valid";
-//     emailError.style.color = "green";
-//   } else {
-//     emailError.textContent = "Email is invalid";
-//     emailError.style.color = "red";
-//   }
-//   if (emailValue == "") {
-//     // ბრჭყალები აუცილებლად ერთად
-//     emailError.textContent = " "; // აქ ცალ-ცალკე
-//   }
-// });

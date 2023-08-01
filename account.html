@@ -22,7 +22,7 @@
           </a>
         </div>
         <div class="header-input-wrapper">
-          <form action="/search" method="GET">
+          <form action="/search">
             <label for="searchInput"></label>
             <input
               type="search"
@@ -99,26 +99,16 @@
           <p class="roboto account-text">OR CREATE AN ACCOUNT</p>
         </div>
         <div class="form-wrapper">
-          <form class="form-element" action="" id="registration">
+          <form class="form-element" action="" id="registration" method="POST">
             <div class="input-wrapper">
-              <label class="roboto label-item" for="myname">First Name</label>
+              <label class="roboto label-item" for="myname">User Name</label>
 
               <input class="input-item" type="text" name="myname" id="myname" />
+              <p id="userNameError" class="roboto"></p>
               <p class="error-text roboto" id="error-myname"></p>
             </div>
 
-            <div class="input-wrapper">
-              <label class="roboto label-item" for="mylastname"
-                >Last Name</label
-              >
-              <input
-                class="input-item"
-                type="text"
-                name="mylastname"
-                id="mylastname"
-              />
-              <p class="error-text roboto" id="error-mylastname"></p>
-            </div>
+    
 
             <div class="input-wrapper">
               <label class="roboto label-item" for="myemail">Email</label>
@@ -128,19 +118,24 @@
                 name="myemail"
                 id="myemail"
               />
+              <p class="roboto" id="emailError"></p>
               <p class="error-text roboto" id="error-myemail"></p>
             </div>
 
-            <div class="input-wrapper">
-              <label class="roboto label-item" for="mypassword">Password</label>
-              <input
-                class="input-item"
-                type="password"
-                name="mypassword"
-                id="mypassword"
-              />
-              <p class="error-text roboto" id="error-mypassword"></p>
-            </div>
+            
+              <div class="password-input input-wrapper">
+                <label class="roboto label-item" for="mypassword">Password</label>
+                <input
+                  class="input-item"
+                  type="password"
+                  name="mypassword"
+                  id="mypassword"
+                />
+                <i class="fa-solid fa-eye" id="passwordIcon"></i>
+                <p class="error-text roboto" id="error-mypassword"></p>
+              </div>
+             
+            
 
             <div class="input-wrapper">
               <label class="roboto label-item" for="mypassword2"
@@ -174,6 +169,56 @@
           </form>
         </div>
       </section>
+
+
+
+
+
+
+      <!-- FOOOOOTER -->
+
+      <footer>
+        <div class="footer-wrapper">
+      
+          <div class="footer-column">
+            <div>
+              <a href="index.html">
+                <i class="fa-solid fa-book-open-reader"></i>
+              </a>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="footer-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="footer-contact-info">
+                <span class="poppins">Call Us</span>
+                <a class="roboto a-item-footer" href="tel:+4915753049700"
+                  >+49 1575 3049700</a
+                >
+              </div>
+            </div>
+
+
+            <div class="contact-info-block">
+              <div class="footer-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="footer-contact-info">
+                <span class="poppins">Mail Us</span>
+                <a
+                  class="roboto a-item-footer"
+                  href="mailto:yoga-asana@gmail.com"
+                  >yoga-asana@gmail.com</a
+                >
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>

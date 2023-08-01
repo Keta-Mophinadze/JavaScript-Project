@@ -10,6 +10,10 @@
     .fa-book-open-reader {
         margin-right: 0.938rem;
     }
+    .footer-wrapper {
+        flex-wrap: wrap;
+        gap: 3.125rem;
+    }
 
 
     
@@ -30,6 +34,9 @@
 @media (max-width:768px) {
     .header-section-wrapper {
         padding-left: 0.313rem;
+    }
+    .footer-wrapper {
+        justify-content: space-around;
     }
 }
 
@@ -69,5 +76,17 @@
         width: 1.875rem;
         height: 2.5rem;
     }
+    .footer-wrapper {
+        justify-content: space-between;
+    }
+    .social-media-icons {
+        align-items: flex-start;
+    }
+    .form-wrapper,
+    .sign-up-block {
+        padding: 0 1.25rem;
+    }
+    
+
     
 }

@@ -22,6 +22,22 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Open Sans SemiCondensed';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSansSemiCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSansSemiCondensed-Medium.woff') format('woff'),
+        url('../fonts/OpenSansSemiCondensed-Medium.ttf') format('truetype'),
+        url('../fonts/OpenSansSemiCondensed-Medium.svg#OpenSansSemiCondensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
 
 
 

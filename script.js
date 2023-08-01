@@ -1,6 +1,6 @@
 "use strict";
 
-// HEADER - BURGER BAR
+// Header - Burger Bar
 const ulNavigation = document.getElementById("ul-nav");
 const burgerToggle = document.getElementById("burgerBar");
 burgerToggle.addEventListener("click", function () {
@@ -8,23 +8,23 @@ burgerToggle.addEventListener("click", function () {
   burgerToggle.classList.toggle("activeBurger");
 });
 
+// Validation
 const formElement = document.getElementById("registration");
 formElement.addEventListener("submit", function (event) {
   event.preventDefault();
   const errors = {};
-  // USERNAME
+  // Username
   const userFirstName = document.getElementById("myname").value;
   if (userFirstName === "") {
     errors.myname = "Please complete this field";
   }
 
-  // EMAIL
+  // Email
   const emailValue = document.getElementById("myemail").value;
   if (emailValue === "") {
     errors.myemail = "Please complete this field";
   }
-
-  //PASSWORD
+  // Password
   const passwordValue = document.getElementById("mypassword").value;
   const passwordValue2 = document.getElementById("mypassword2").value;
   if (passwordValue === "") {
@@ -33,7 +33,7 @@ formElement.addEventListener("submit", function (event) {
   if (passwordValue != passwordValue2) {
     errors.mypassword2 = "Passwords do not match";
   }
-  // CHECKBOX
+  // Checkbox
   const checkBox = document.getElementById("checkBox").checked;
   if (!checkBox) {
     errors.check = "Please agree to our Terms and Conditions";
@@ -42,7 +42,7 @@ formElement.addEventListener("submit", function (event) {
 
   document.querySelectorAll(".error-text").forEach((element) => {
     element.textContent = " ";
-  }); // <-- Add closing parenthesis here
+  });
 
   for (let keyObject in errors) {
     console.log(keyObject);
@@ -57,6 +57,7 @@ formElement.addEventListener("submit", function (event) {
   }
 });
 
+// Hidden Password
 const showPassword = document.getElementById("mypassword");
 const icon = document.getElementById("passwordIcon");
 icon.addEventListener("click", function () {
@@ -70,7 +71,7 @@ icon.addEventListener("click", function () {
     icon.classList.add("fa-eye");
   }
 });
-
+// Regex - Email
 const emailField = document.getElementById("myemail");
 emailField.addEventListener("keyup", function () {
   const emailError = document.getElementById("emailError");
@@ -87,10 +88,11 @@ emailField.addEventListener("keyup", function () {
     emailError.innerHTML = " ";
   }
 });
-const userNameField = document.getElementById('myname');
-userNameField.addEventListener('keyup', function () {
-  const userNameError = document.getElementById('userNameError');
-  const userNameValue = document.getElementById('myname').value;
+// Regex - Username
+const userNameField = document.getElementById("myname");
+userNameField.addEventListener("keyup", function () {
+  const userNameError = document.getElementById("userNameError");
+  const userNameValue = document.getElementById("myname").value;
   const userNamePattern = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$/;
   if (userNameValue.match(userNamePattern)) {
     userNameError.textContent = "Username is valid";
@@ -102,6 +104,4 @@ userNameField.addEventListener('keyup', function () {
   if (userNameValue == "") {
     userNameError.innerHTML = " ";
   }
-  
-})
-
+});

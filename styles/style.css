@@ -412,3 +412,199 @@
     height: 0.938rem;
     margin: 0 0.813rem;
 }
+
+
+/* E BOOKS SECTION */
+.ebook-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    max-width: 1449px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(251, 236, 236, 0.52) 0%, rgba(230, 235, 234, 0.52) 13.33%, rgba(230, 225, 232, 0.52) 54.58%, rgba(239, 232, 224, 0.52) 99.86%);
+
+}
+.ebook-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+.horizontal-line {
+  border-top: 1.5px solid #a11010;
+  width: 20px; 
+}
+.ebook-title span {
+    color: #a11010;
+    font-family: 'Open Sans SemiCondensed';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin-bottom: 4px; 
+    margin-left: 12px;
+
+}
+.left-side-div {
+    max-width: 627px;
+    width: 100%;
+}
+.left-side-div h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0.9px;
+    color: #173F5F;
+    max-width: 600px;
+    width: 100%;
+}
+.left-side-div p {
+    color: #265d8a;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 627px;
+    width: 100%;
+    margin: 4px 0;
+}
+.left-side-div span {
+    color: #a11010;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+
+}
+.email-ebook {
+    width: 400px;
+    height: 42px;
+    outline: none;
+    background: #FFF;
+    padding-left: 7px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+.email-ebook::placeholder {
+    color: #BCBCBC;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-transform: capitalize;
+  }
+  .login-button {
+    width: 153px;
+    height: 42px;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    background-color: #a11010;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .login-button:hover {
+    opacity: 0.9;
+
+  }
+
+  .email-ebook-div {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+  }
+  .right-side-div img {
+    max-width: 684px;
+    width: 100%;
+    display: block;
+  }
+
+
+/* E BOOKS SECTION */
+
+/* NEWS LETTER SECTION */
+.newsletter-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+}
+.title-div {
+    max-width: 380px;
+    width: 100%;
+    
+}
+.title-div h2 { 
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: #173F5F;
+}
+.newsletter-div p {
+    color: #7A7A7A;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 208%; 
+    letter-spacing: 0.4px;
+}
+.newsletter-div {
+    max-width: 500px;
+    width: 100%;
+    background-color: pink;
+}
+  
+.input-newsletter {
+    max-width: 350px;
+    width: 100%;
+    height: 37px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+.input-newsletter::placeholder {
+    color: #9a9a9a;
+    font-size: 13px; 
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-transform: capitalize;
+}
+/* .newsletter-block {
+    position: relative;
+  }
+  
+.fa-paper-plane {
+    position: absolute;
+    top: 50%;
+    right: 33%;
+    transform: translateY(-50%);
+    font-size: 17px;
+  } */
+  
+  
+  
+
+  
+  
+
+
+
+/* NEWS LETTER SECTION */

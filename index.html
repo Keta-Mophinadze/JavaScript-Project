@@ -1,87 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-section-wrapper">
-            <div>
-                <a href="index.html">
-                    <i class="fa-solid fa-book-open-reader"></i>
-                </a>
-            </div>
-            <div class="header-input-wrapper">
-                <form action="/search" method="GET">
-                <label for="searchInput"></label>
-                <input type="search" name="search" id="searchInput" placeholder="Search Books">
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                </form>
-            </div>
-            <div class="header-icon-wrapper">
-                <div>
-                    
-                    <a href="account.html" target="_blank">
-                        <i class="fa-regular fa-user"></i>
-                        <span class="header-span-tag inter">Account</span>
-                    </a>
-                </div>
-                <div class="small-line"></div>
-
-                <div>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span class="header-span-tag inter">Cart: (0€)</span>
-                </div>
-                <div class="small-line"></div>
-
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <span class="header-span-tag inter">Wishlist</span>
-                </div>
-            </div>
-            
+      <div class="header-section-wrapper">
+        <div>
+          <a href="index.html">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </a>
         </div>
-        <hr class="header-line">
-        <!-- NAVIGATION -->
-        <div class="header-navigation-wrapper">
-            <nav>
-                <ul class="ul-item inter" id="ul-nav">
-        
-                    <li>
-                        <a class="header-a-item home nav-active" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="header-a-item about-us" href="about-us.html">About Us</a>
-                    </li>
-                    <li>
-                        <a class="header-a-item books" href="books.html">Books</a>
-                    </li>
-                    <li>
-                        <a class="header-a-item blog" href="blog.html">Blog
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="burger-bar" id="burgerBar">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-
-            </div>
-
+        <div class="header-input-wrapper">
+          <form action="/search" method="GET">
+            <label for="searchInput"></label>
+            <input
+              type="search"
+              name="search"
+              id="searchInput"
+              placeholder="Search Books"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
         </div>
+        <div class="header-icon-wrapper">
+          <div>
+            <a href="account.html" target="_blank">
+              <i class="fa-regular fa-user"></i>
+              <span class="header-span-tag inter">Account</span>
+            </a>
+          </div>
+          <div class="small-line"></div>
+
+          <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="header-span-tag inter">Cart: (0€)</span>
+          </div>
+          <div class="small-line"></div>
+
+          <div>
+            <i class="fa-regular fa-heart"></i>
+            <span class="header-span-tag inter">Wishlist</span>
+          </div>
+        </div>
+      </div>
+      <hr class="header-line" />
+      <!-- NAVIGATION -->
+      <div class="header-navigation-wrapper">
+        <nav>
+          <ul class="ul-item inter" id="ul-nav">
+            <li>
+              <a class="header-a-item home nav-active" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="header-a-item about-us" href="about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="header-a-item books" href="books.html">Books</a>
+            </li>
+            <li>
+              <a class="header-a-item blog" href="blog.html">Blog </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-bar" id="burgerBar">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </div>
     </header>
     <main>
-        <!-- Footer -->
+      <!-- EBook Section -->
+
+      <section>
+        <div class="ebook-section">
+          <div class="left-side-div">
+            <div class="ebook-title">
+              <div class="horizontal-line"></div>
+              <span>Ebook</span>
+            </div>
+            <h2 class="roboto">
+              Access, Read, Practice & Engage with Digital Content (eBook)
+            </h2>
+            <p class="inter">
+              We give you the option to bring as many books as you like on your
+              trip, or listen to audiobooks while driving, walking, or whenever
+              you want. Visit our online library and choose a book that
+              interests you.
+            </p>
+            <p class="inter">
+              If you purchase 2 books, you will get a
+              <span class="inter">50% discount</span> on the third book, any
+              book you want.
+            </p>
+            <div class="email-ebook-div">
+              <label class="inter" for="emailfield"></label>
+              <input
+                class="email-ebook"
+                type="email"
+                name="emailfield"
+                id="emailfield"
+                placeholder="Enter Your Email Address"
+              />
+              <button
+                class="login-button"
+                onclick="location.href='account.html'"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+          <div class="right-side-div">
+            <img src="images/ebook.avif" alt="ebook" />
+          </div>
+        </div>
+      </section>
+      <!-- EBook Section -->
+
+      <!-- NEWS LETTER SECTION -->
+
+      <section>
+        <div class="newsletter-section-wrapper">
+          <div class="title-div">
+            <h2 class="inter">Subscribe to our newsletter</h2>
+          </div>
+          <div class="newsletter-div">
+            <p class="inter">
+              Do not miss the news in our bookstore. Leave us an email and we
+              will notify you about every interesting news, event or discount.
+            </p>
+            <div class="newsletter-block">
+              <form action="">
+                <label for="email"></label>
+                <input
+                  class="input-newsletter"
+                  type="email"
+                  name="newletter-email"
+                  id="newsLetterEmail"
+                  placeholder="Enter your email address here"
+                />
+               
+              </form>
+              
+                <i class="fas fa-paper-plane"></i>
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- NEWS LETTER SECTION -->
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer-book-icon">
           <a href="index.html">
@@ -206,5 +290,5 @@
       <!-- Footer -->
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

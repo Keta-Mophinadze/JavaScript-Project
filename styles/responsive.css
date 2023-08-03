@@ -35,6 +35,9 @@
     .newsletter-block {
         text-align: center;
     }
+    .form-email-block {
+        margin: 15px auto 0 auto;
+    }
 
 
 
@@ -62,10 +65,17 @@
         justify-content: space-around;
     }
     .ebook-section {
-        flex-direction: column-reverse;
         padding: 0;
-
+        background-position: 50% 30%;
+        padding-left: 20px;
     }
+    .email-ebook-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+  
 
 }
 
@@ -93,7 +103,28 @@
     .left-side-div {
         width: 380px;
         width: 80%;
-    
+    }
+    .title-div h2 {
+        font-size: 26px;
+    }
+
+    .ebook-section {
+        height: 730px;
+    }
+    .ebook-section {
+        background-position: 54% 30%; 
+    }
+    .form-email-block {
+        flex-direction: column;
+    }
+    .subscribe-button {
+        margin-top: 8px;
+    }
+    .newsletter-email-input {
+        border-radius: 4px;
+    }
+    .subscribe-button {
+        border-radius: 4px;
     }
    
 

@@ -127,8 +127,9 @@
     right: 0.625rem;
     width: 2.188rem;
     height: 3.125rem;
-    border: none;
-    border-radius: 0.125rem;
+    /* border: none;
+    border-radius: 0.125rem; */
+    /* border: 2px solid black; */
     display: none;
     cursor: pointer;
     margin-right: 0.938rem;
@@ -587,24 +588,72 @@
     letter-spacing: 1.68px;
     text-transform: capitalize;
 }
-/* .newsletter-block {
-    position: relative;
-  }
-  
-.fa-paper-plane {
-    position: absolute;
-    top: 50%;
-    right: 33%;
-    transform: translateY(-50%);
-    font-size: 17px;
-  } */
-  
-  
-  
 
   
   
-
 
 
 /* NEWS LETTER SECTION */
+
+
+
+/* Books - Book Section */
+
+
+
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    height: 55vh;
+    width: calc((100% / 3) - 16px);
+    margin: 8px;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-actions {
+    margin: 8px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #load-more {
+    width: calc((100% / 3) - 8px);
+    padding: 16px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+  
+  #load-more:not([disabled]):hover {
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
+  }
+  
+  #load-more[disabled] {
+    background-color: #eaeaea !important;
+  }
+  
+
+
+
+
+
+/* Books - Book Section */

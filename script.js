@@ -106,33 +106,26 @@
 //   }
 // });
 
-
-
-
 // // SLIDER
 // const dataSLider = [
 //   {
 //     id: 1,
-//     imageUrlSlide:
-//       "images/book1.jpg",
+//     imageUrlSlide: "images/book1.jpg",
 //     // slideTitle: "slider title 1",
 //   },
 //   {
 //     id: 2,
-//     imageUrlSlide:
-//       "images/book2.jpeg",
+//     imageUrlSlide: "images/book2.jpeg",
 //     // slideTitle: "slider title 2",
 //   },
 //   {
 //     id: 3,
-//     imageUrlSlide:
-//       "images/book3.jpeg",
+//     imageUrlSlide: "images/book3.jpeg",
 //     // slideTitle: "slider title 3",
 //   },
 //   {
 //     id: 4,
-//     imageUrlSlide:
-//       "images/book4.jpeg",
+//     imageUrlSlide: "images/book4.jpeg",
 //     // slideTitle: "slider title 4",
 //   },
 // ];
@@ -211,11 +204,6 @@
 
 // slide();
 
-
-
-
-
-
 // // -------------------
 
 const cardContainer = document.getElementById("card-container");
@@ -227,8 +215,6 @@ const cardLimit = 45;
 const cardIncrease = 9;
 const pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
-
-cardTotalElem.innerHTML = cardLimit;
 
 const getRandomColor = () => {
   const h = Math.floor(Math.random() * 360);

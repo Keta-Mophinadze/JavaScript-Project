@@ -282,9 +282,18 @@ const addCards = (pageIndex) => {
   }
 };
 
+// window.onload = function () {
+//   addCards(currentPage);
+//   loadMoreButton.addEventListener("click", () => {
+//     addCards(currentPage + 1);
+//   });
+// };
+
 window.onload = function () {
-  addCards(currentPage);
   loadMoreButton.addEventListener("click", () => {
     addCards(currentPage + 1);
   });
+
+  addCards(currentPage); 
 };
+

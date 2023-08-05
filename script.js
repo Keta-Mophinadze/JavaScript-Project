@@ -198,7 +198,7 @@ const cardIncrease = 9;
 const pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
 
-const getRandomColor = () => {
+  const itemFunsction = () => {
   const h = Math.floor(Math.random() * 360);
   return `hsl(${h}deg, 90%, 85%)`;
 };
@@ -261,7 +261,6 @@ const handleButtonStatus = () => {
 const createCard = (index) => {
   const card = document.createElement("div");
   card.className = "card";
-  card.style.backgroundColor = getRandomColor();
   card.style.backgroundImage = `url('${cardImages[index - 1]}')`; // Set the background image URL for the card
   cardContainer.appendChild(card);
 };

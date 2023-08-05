@@ -1,12 +1,12 @@
 "use strict";
 
-// // Header - Burger Bar
-// const ulNavigation = document.getElementById("ul-nav");
-// const burgerToggle = document.getElementById("burgerBar");
-// burgerToggle.addEventListener("click", function () {
-//   ulNavigation.classList.toggle("toggleNav");
-//   burgerToggle.classList.toggle("activeBurger");
-// });
+// Header - Burger Bar
+const ulNavigation = document.getElementById("ul-nav");
+const burgerToggle = document.getElementById("burgerBar");
+burgerToggle.addEventListener("click", function () {
+  ulNavigation.classList.toggle("toggleNav");
+  burgerToggle.classList.toggle("activeBurger");
+});
 
 // // Validation
 // const formElement = document.getElementById("registration");
@@ -107,75 +107,58 @@
 // });
 
 // // SLIDER
-// const dataSLider = [
+// const sliderPicture = [
 //   {
 //     id: 1,
 //     imageUrlSlide: "images/book1.jpg",
-//     // slideTitle: "slider title 1",
 //   },
 //   {
 //     id: 2,
 //     imageUrlSlide: "images/book2.jpeg",
-//     // slideTitle: "slider title 2",
 //   },
 //   {
 //     id: 3,
 //     imageUrlSlide: "images/book3.jpeg",
-//     // slideTitle: "slider title 3",
 //   },
 //   {
 //     id: 4,
 //     imageUrlSlide: "images/book4.jpeg",
-//     // slideTitle: "slider title 4",
 //   },
 // ];
 
-// // slider
 // const sliderContent = document.getElementById("slider-content");
 // const arrowLeft = document.getElementById("arrow-left");
 // const arrowRight = document.getElementById("arrow-right");
 // let sliderIndex = 0;
 
-// // სლაიდერის სტრუქტურის აწყობა
-// //div-ის შექმნა
 // function createDivTag() {
-//   let div = document.createElement("div");
+//   const div = document.createElement("div");
 
 //   return div;
 // }
 
-// // სურათის შექმნა
 // function createImgTag(item) {
-//   // let tagImage = document.createElement("img");
-//   // tagImage.setAttribute("src", `${item.imageUrlSlide}`);
-//   // tagImage.setAttribute("alt", `${item.slideTitle}`);
-
-//   let tagImage = document.createElement("div");
+//   const tagImage = document.createElement("div");
 //   tagImage.style.backgroundImage = `url(${item.imageUrlSlide})`;
 //   tagImage.classList.add("bg-image");
 
 //   return tagImage;
 // }
 
-// // სათაურის შემქნა
 // function createTitle(item) {
-//   let titleTag = document.createElement("h2");
-//   // titleTag.textContent = `${item.slideTitle}`;
-
+//   const titleTag = document.createElement("h2");
 //   return titleTag;
 // }
 
-// // dots - function
 // function createDots() {
 //   const dotsWraper = document.createElement("div");
 //   dotsWraper.classList.add("dots-Wraper");
 
-//   dataSLider.forEach((element) => {
+//   sliderPicture.forEach((element) => {
 //     const dotItem = document.createElement("div");
 //     dotItem.classList.add("dot-item");
 //     dotItem.setAttribute("data-id", element.id - 1);
 
-//     // dots-click
 //     dotItem.addEventListener("click", function (event) {
 //       let id = event.target.getAttribute("data-id");
 //       console.log(id);
@@ -188,12 +171,11 @@
 //   return dotsWraper;
 // }
 
-// // მთავარი სლაიდერს ფუნქცია,რომელი სლაიდი უნდა გამოჩნდეს
 // function slide() {
 //   sliderContent.innerHTML = " ";
 //   const sliderItem = createDivTag();
-//   const sliderImg = createImgTag(dataSLider[sliderIndex]);
-//   const h2Tag = createTitle(dataSLider[sliderIndex]);
+//   const sliderImg = createImgTag(sliderPicture[sliderIndex]);
+//   const h2Tag = createTitle(sliderPicture[sliderIndex]);
 //   const dotsContainer = createDots();
 
 //   sliderItem.appendChild(sliderImg);

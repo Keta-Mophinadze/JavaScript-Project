@@ -669,9 +669,8 @@
 
 .accordion {
     width: 100%;
-    /* max-width: 1080px; */
-    max-width: 1300px;
-    height: 500px;
+    /* max-width: 1277px; */
+    height: 520px;
     overflow: hidden;
     margin: 50px auto;
   }
@@ -687,7 +686,7 @@
     vertical-align: bottom;
     position: relative;
     width: 16.666%;
-    height: 500px;
+    height: 520px;
     background-repeat: no-repeat;
     background-position: center center;
     transition: all 500ms ease;
@@ -699,12 +698,12 @@
   }
   .accordion ul li div a {
     display: block;
-    height: 500px;
+    height: 520px;
     width: 100%;
     position: relative;
     z-index: 3;
     /* vertical-align: bottom; */
-    padding: 170px 20px;
+    padding: 250px 20px;
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
@@ -739,12 +738,22 @@
   }
 
 
-  .accordion ul li:nth-child(1) { background-image: url("../images/camus.webp"); }
-.accordion ul li:nth-child(2) { background-image: url("images/jamesjoyce.jpg"); }
-.accordion ul li:nth-child(3) { background-image: url("images/ilia.jpeg") }
-.accordion ul li:nth-child(4) { background-image: url("4.jpg"); }
-.accordion ul li:nth-child(5) { background-image: url("5.jpg"); }
-.accordion ul li:nth-child(6) { background-image: url("6.jpg"); }
+.accordion ul li:nth-child(1) { background-image: url("../images/camus.webp"); }
+
+.accordion ul li:nth-child(2) {
+    background-image: url("../images/nietzsche.jpeg");
+    background-size: cover; 
+  }
+/* .accordion ul li:nth-child(3) { background-image: url("../images/ilia.jpg") } */
+.accordion ul li:nth-child(3) {
+    background-image: url("../images/ilia.jpg");
+    background-size: cover;
+  }
+  
+  
+.accordion ul li:nth-child(4) { background-image: url("../images/max.jpg"); }
+.accordion ul li:nth-child(5) { background-image: url("../images/hesse.jpeg"); }
+/* .accordion ul li:nth-child(6) { background-image: url("../images/mann.jpg"); } */
 
 
 .accordion ul:hover li { width: 8%; }

@@ -69,6 +69,21 @@
         background-position: 50% 30%;
         padding-left: 20px;
     }
+    .accordion { height: auto; }
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      transition: none;
+    }
+    .carousel img {
+        width: calc(100% / 2);
+    }
+
 
 
   
@@ -127,6 +142,9 @@
     }
     .books-title {
         padding: 50px 12px 0 12px;
+    }
+    .carousel img {
+        width: 100%;
     }
    
 

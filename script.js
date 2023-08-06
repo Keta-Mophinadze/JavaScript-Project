@@ -107,113 +107,186 @@ burgerToggle.addEventListener("click", function () {
 // });
 
 
-// // -------------------
+// // // -------------------
 
-const cardContainer = document.getElementById("card-container");
-const loadMoreButton = document.getElementById("load-more");
-const cardCountElem = document.getElementById("card-count");
-const cardTotalElem = document.getElementById("card-total");
+// const cardContainer = document.getElementById("card-container");
+// const loadMoreButton = document.getElementById("load-more");
+// const cardCountElem = document.getElementById("card-count");
+// const cardTotalElem = document.getElementById("card-total");
 
-const cardLimit = 45;
-const cardIncrease = 9;
-const pageCount = Math.ceil(cardLimit / cardIncrease);
-let currentPage = 1;
+// const cardLimit = 45;
+// const cardIncrease = 9;
+// const pageCount = Math.ceil(cardLimit / cardIncrease);
+// let currentPage = 1;
 
-  const itemFunsction = () => {
-  const h = Math.floor(Math.random() * 360);
-  return `hsl(${h}deg, 90%, 85%)`;
-};
+//   const itemFunsction = () => {
+//   const h = Math.floor(Math.random() * 360);
+//   return `hsl(${h}deg, 90%, 85%)`;
+// };
 
-const cardImages = [
-  "images/1.jpeg",
-  "images/2.jpg",
-  "images/3.jpg",
-  "images/4.jpg",
-  "images/5.jpg",
-  "images/6.jpg",
-  "images/7.jpg",
-  "images/8.jpeg",
-  "images/9.jpg",
-  "images/10.jpg",
-  "images/11.jpg",
-  "images/12.jpg",
-  "images/13.jpg",
-  "images/14.jpg",
-  "images/15.jpg",
-  "images/16.jpg",
-  "images/17.jpg",
-  "images/18.jpeg",
-  "images/19.jpeg",
-  "images/20.jpeg",
-  "images/21.jpeg",
-  "images/22.jpg",
-  "images/23.jpg",
-  "images/24.jpg",
-  "images/25.jpg",
-  "images/26.jpg",
-  "images/27.jpg",
-  "images/28.jpg",
-  "images/29.jpg",
-  "images/30.webp",
-  "images/31.jpg",
-  "images/32.jpg",
-  "images/33.jpg",
-  "images/34.jpg",
-  "images/35.jpg",
-  "images/36.jpg",
-  "images/37.jpg",
-  "images/38.jpeg",
-  "images/39.jpg",
-  "images/40.jpeg",
-  "images/41.jpg",
-  "images/42.jpeg",
-  "images/43.jpeg",
-  "images/44.jpg",
-  "images/45.jpg",
-];
+// const cardImages = [
+//   "images/1.jpeg",
+//   "images/2.jpg",
+//   "images/3.jpg",
+//   "images/4.jpg",
+//   "images/5.jpg",
+//   "images/6.jpg",
+//   "images/7.jpg",
+//   "images/8.jpeg",
+//   "images/9.jpg",
+//   "images/10.jpg",
+//   "images/11.jpg",
+//   "images/12.jpg",
+//   "images/13.jpg",
+//   "images/14.jpg",
+//   "images/15.jpg",
+//   "images/16.jpg",
+//   "images/17.jpg",
+//   "images/18.jpeg",
+//   "images/19.jpeg",
+//   "images/20.jpeg",
+//   "images/21.jpeg",
+//   "images/22.jpg",
+//   "images/23.jpg",
+//   "images/24.jpg",
+//   "images/25.jpg",
+//   "images/26.jpg",
+//   "images/27.jpg",
+//   "images/28.jpg",
+//   "images/29.jpg",
+//   "images/30.webp",
+//   "images/31.jpg",
+//   "images/32.jpg",
+//   "images/33.jpg",
+//   "images/34.jpg",
+//   "images/35.jpg",
+//   "images/36.jpg",
+//   "images/37.jpg",
+//   "images/38.jpeg",
+//   "images/39.jpg",
+//   "images/40.jpeg",
+//   "images/41.jpg",
+//   "images/42.jpeg",
+//   "images/43.jpeg",
+//   "images/44.jpg",
+//   "images/45.jpg",
+// ];
 
-const handleButtonStatus = () => {
-  if (pageCount === currentPage) {
-    loadMoreButton.classList.add("disabled");
-    loadMoreButton.setAttribute("disabled", true);
-  }
-};
+// const handleButtonStatus = () => {
+//   if (pageCount === currentPage) {
+//     loadMoreButton.classList.add("disabled");
+//     loadMoreButton.setAttribute("disabled", true);
+//   }
+// };
 
-const createCard = (index) => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.style.backgroundImage = `url('${cardImages[index - 1]}')`; // Set the background image URL for the card
-  cardContainer.appendChild(card);
-};
+// const createCard = (index) => {
+//   const card = document.createElement("div");
+//   card.className = "card";
+//   card.style.backgroundImage = `url('${cardImages[index - 1]}')`; // Set the background image URL for the card
+//   cardContainer.appendChild(card);
+// };
 
-const addCards = (pageIndex) => {
-  currentPage = pageIndex;
+// const addCards = (pageIndex) => {
+//   currentPage = pageIndex;
 
-  handleButtonStatus();
+//   handleButtonStatus();
 
-  const startRange = (pageIndex - 1) * cardIncrease;
-  const endRange =
-    pageIndex * cardIncrease > cardLimit ? cardLimit : pageIndex * cardIncrease;
+//   const startRange = (pageIndex - 1) * cardIncrease;
+//   const endRange =
+//     pageIndex * cardIncrease > cardLimit ? cardLimit : pageIndex * cardIncrease;
 
-  cardCountElem.innerHTML = endRange;
+//   cardCountElem.innerHTML = endRange;
 
-  for (let i = startRange + 1; i <= endRange; i++) {
-    createCard(i);
-  }
-};
+//   for (let i = startRange + 1; i <= endRange; i++) {
+//     createCard(i);
+//   }
+// };
 
 // window.onload = function () {
-//   addCards(currentPage);
 //   loadMoreButton.addEventListener("click", () => {
 //     addCards(currentPage + 1);
 //   });
+
+//   addCards(currentPage); 
 // };
 
-window.onload = function () {
-  loadMoreButton.addEventListener("click", () => {
-    addCards(currentPage + 1);
-  });
 
-  addCards(currentPage); 
-};
+
+
+
+// Slider 
+const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll('img')[0];
+const arrowIcons = document.querySelectorAll(".wrapper i");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHiddenIcons = () => {
+  let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+  arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+  arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+}
+
+
+arrowIcons.forEach(icon => {
+  icon.addEventListener('click', () => {
+    let firstImgWidth = firstImg.clientWidth + 14; 
+    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+    setTimeout(() => showHiddenIcons(), 60);
+  })
+});
+
+const autoSlide = () => {
+  if(carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
+
+  positionDiff = Math.abs(positionDiff);
+  let firstImgWidth = firstImg.clientWidth + 14; 
+  let valDifference = firstImgWidth - positionDiff;
+  if (carousel.scrollLeft > prevScrollLeft) {
+    return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+  }
+  carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+
+}
+
+const dragStart = (e) => {
+  isDragStart = true;
+  prevPageX = e.pageX || e.touches[0].pageX;
+  prevScrollLeft = carousel.scrollLeft;
+
+}
+const dragging = (e) => {
+  if(!isDragStart) return;
+  e.preventDefault();
+  isDragging = true;
+  carousel.classList.add('dragging');
+  positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+  showHiddenIcons();
+}
+
+const dragStop = () => {
+  isDragStart = false;
+  carousel.classList.remove('dragging');
+  if (!isDragging) return;
+  isDragging = false;
+  autoSlide();
+}
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+
+carousel.addEventListener("mouseup", dragStop);
+carousel.addEventListener("mouseleave", dragStop);
+carousel.addEventListener("touchend", dragStop);
+
+
+
+
+
+
 

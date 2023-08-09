@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-section-wrapper">
+        <div>
+          <a href="index.html">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </a>
+        </div>
+        <div class="header-input-wrapper">
+          <form action="/search" method="GET">
+            <label for="searchInput"></label>
+            <input
+              type="search"
+              name="search"
+              id="searchInput"
+              placeholder="Search Books"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="header-icon-wrapper">
+          <div>
+            <a href="account.html" target="_blank">
+              <i class="fa-regular fa-user"></i>
+              <span class="header-span-tag inter">Account</span>
+            </a>
+          </div>
+          <div class="small-line"></div>
+
+          <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="header-span-tag inter">Cart: (0€)</span>
+          </div>
+          <div class="small-line"></div>
+
+          <div>
+            <i class="fa-regular fa-heart"></i>
+            <span class="header-span-tag inter">Wishlist</span>
+          </div>
+        </div>
+      </div>
+      <hr class="header-line" />
+      <!-- NAVIGATION -->
+      <div class="header-navigation-wrapper">
+        <nav>
+          <ul class="ul-item inter" id="ul-nav">
+            <li>
+              <a class="header-a-item home" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="header-a-item about-us" href="search.html"
+                >Search</a
+              >
+            </li>
+            <li>
+              <a class="header-a-item books" href="books.html">Books</a>
+            </li>
+            <li>
+              <a class="header-a-item blog nav-active" href="faq.html">FAQ </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-bar" id="burgerBar">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- FAAAAAAQ -->
+      <section>
+        <div class="accordion-div-block">
+          <h2 class="title">FAQs</h2>
+          <h2 class="roboto">You have questions? We have the answers!</h2>
+
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">How can I change my order?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                Just go to <span>"Orders"</span> in your customer account and
+                edit your order. It is editable until we start processing.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">How can I cancel my order?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                Go to <span>"Orders"</span> in your customer account and use the
+                comment field to cancel items that have not yet been processed.
+              </p>
+              <p class="roboto">
+                If the order has already been processed and shipped, you can
+                either refuse to accept it or return the package, notifying us
+                on the return shipping page.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">Where can I pick up my order?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                At the <span>KulturKaufhaus</span> you can pick up your order at
+                the ServiceCenter on the first floor next to the cash desks.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">What do I need to pick up my order?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                If you have reserved your product online and want to pay for it
+                on pickup, we only need your name and the shopping basket number
+              </p>
+              <p class="roboto">
+                If you have already paid online and just want to pick up your
+                order, bring an ID.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">Where can I check the status of my order?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                As soon as your order is sent, you will receive an email with a
+                tracking link.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">
+                I have forgotten my password. What can I do?
+              </h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                If you have forgotten your password, click
+                <span>"My account"</span> and select
+                <span>"Forgotten your password?"</span>. Enter your email
+                address to receive a link for creating a new password.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">Why isn’t my password being accepted?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                To ensure your password is safe, there are guidelines; it must
+                contain at least <span>6 characters</span> and include at least
+                <span>one number</span> or <span>a special character</span>.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">My eBook purchase was not completed.</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                To buy an eBook you must use a German payment method or account.
+              </p>
+              <p class="roboto">
+                You must be logged into your customer account to buy eBooks. You
+                cannot buy eBooks as a guest.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">I can't open my eBook.</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                Open your <span> PocketbookCloud</span> with the Pocketbook App
+                or in your browser. You should be able to open and read your
+                eBook there.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">Is my dog allowed in the KulturKaufhaus?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                We are happy to welcome all two- and four-legged visitors.
+                However, the four-legged friends must be kept on a leash.
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">How can I buy a gift card?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                Select the gift card, enter the amount and place the gift card
+                in the shopping basket.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">A product is defective. What now? </h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+                We apologize if any item that we have delivered is faulty or damaged. Returning the product is simple:
+                Go to the page <span>return shipping</span>, where you will find all the information you need.
+              </p>
+              <p class="roboto">If you are nearby, come to the service center where the amount will be refunded.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">
+              <h3 class="roboto">What are the shipment options?</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="answer">
+              <p class="roboto">
+               <span>Within Germany:</span> Shipment with DHL and Deutsche Post is free of charge. The delivery usually takes 1-2 business days.
+
+              </p>
+              <p class="roboto"><span>Deliveries abroad:</span> With DHL. Shipment costs are listed <span>here</span>. 
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- FAAAAAAQ -->
+
+      <!-- SCROLL TO TOP -->
+
+      <a class="to-top" href="#">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+
+      <!-- SCROLL TO TOP -->
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-book-icon">
+          <a href="index.html">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </a>
+        </div>
+        <div class="footer-wrapper">
+          <div>
+            <div class="contact-info-block">
+              <div class="footer-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="footer-contact-info">
+                <span class="roboto">By Phone</span>
+                <a class="roboto a-item-footer" href="tel:+493020251111"
+                  >+49 30 20251111</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="footer-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="footer-contact-info">
+                <span class="roboto">By Mail</span>
+                <a class="roboto a-item-footer" href="mailto:dussmann@gmail.com"
+                  >dussmann@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="footer-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="footer-contact-info">
+                <span class="roboto">Address:</span>
+                <a
+                  class="roboto a-item-footer"
+                  href="https://goo.gl/maps/5ckhVkh9dYMc7ZGm7"
+                >
+                  <ul>
+                    <li>Friedrichstraße 90</li>
+                    <li>Berlin, Germany</li>
+                  </ul></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <div class="service-option">
+              <span class="roboto">Service options:</span>
+              <ul class="footer-ul-list">
+                <li class="roboto">In-store shopping</li>
+                <li class="roboto">In-store pick-up</li>
+                <li class="roboto">Delivery</li>
+              </ul>
+            </div>
+
+            <div class="working-hour">
+              <span class="roboto">Working Hours:</span>
+              <p class="roboto">Monday &ndash; Saturday:</p>
+              <p class="roboto">09:00AM &ndash; 23:00PM</p>
+            </div>
+          </div>
+
+          <div class="service-option">
+            <span class="roboto">Service</span>
+            <ul class="footer-ul-list">
+              <li class="roboto">Service &#38; Help</li>
+              <li class="roboto">Return Shipping</li>
+              <li class="roboto">Gift Voucher</li>
+              <li class="roboto">Collaborations</li>
+              <li class="roboto">FAQ</li>
+            </ul>
+          </div>
+
+          <div class="service-option">
+            <span class="roboto">KulturKaufhaus</span>
+            <ul class="footer-ul-list">
+              <li class="roboto">About Us</li>
+              <li class="roboto">Our Team</li>
+              <li class="roboto">Events</li>
+              <li class="roboto">Newsletter</li>
+            </ul>
+          </div>
+
+          <div class="service-option">
+            <span class="roboto">Follow Us</span>
+            <div class="social-media-icons">
+              <a
+                class="a-item-footer"
+                href="https://www.facebook.com/kulturkaufhaus/"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a
+                class="a-item-footer"
+                href="https://www.youtube.com/user/KulturKaufhaus"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                class="a-item-footer"
+                href="https://www.instagram.com/dussmann.official/"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="header-line footer-line" />
+        <div class="copyright">
+          <p class="roboto">&#169; Keta Mophinadze</p>
+          <div class="divider"></div>
+          <p class="roboto">2023</p>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

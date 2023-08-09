@@ -47,6 +47,22 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/');
+    src: url('../fonts/?#iefix') format('embedded-opentype'),
+        url('../fonts/JosefinSans-ExtraLight.woff2') format('woff2'),
+        url('../fonts/JosefinSans-ExtraLight.woff') format('woff'),
+        url('../fonts/JosefinSans-ExtraLight.ttf') format('truetype'),
+        url('../fonts/JosefinSans-ExtraLight.svg#JosefinSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
 
 
 

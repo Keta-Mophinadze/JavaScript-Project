@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Search</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon.png" />
   </head>
-  <!-- <body onload="showModal()"> -->
   <body>
     <header>
       <div class="header-section-wrapper">
@@ -26,7 +25,7 @@
         <div class="header-input-wrapper">
           <form action="/search" method="GET">
             <label for="searchInput"></label>
-            <input 
+            <input
               type="search"
               name="search"
               id="searchInput"
@@ -35,11 +34,6 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </form>
         </div>
-
-        
-
-     
-
         <div class="header-icon-wrapper">
           <div>
             <a href="account.html" target="_blank">
@@ -62,17 +56,15 @@
         </div>
       </div>
       <hr class="header-line" />
-      <!-- NAVIGATION -->
+      <!-- Navigation -->
       <div class="header-navigation-wrapper">
         <nav>
           <ul class="ul-item inter" id="ul-nav">
             <li>
-              <a class="header-a-item home nav-active" href="index.html"
-                >Home</a
-              >
+              <a class="header-a-item home" href="index.html">Home</a>
             </li>
             <li>
-              <a class="header-a-item about-us" href="search.html"
+              <a class="header-a-item about-us nav-active" href="search.html"
                 >Search</a
               >
             </li>
@@ -91,203 +83,172 @@
         </div>
       </div>
     </header>
+    <!-- Navigation -->
     <main>
-      <!-- Cokieeeeeeeeeeees -->
-      <div id="modalBox">
-        <i class="fa-solid fa-cookie-bite"></i>
-        <p>
-          This website uses cookies to enhance your browsing experience and
-          provide personalized content. For more information, please read our
-          Privacy Policy.
-        </p>
-        <button onclick="closeModal()" type="button">Accept</button>
-        <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
-      </div>
-
-      <div id="overlay"></div>
-
-      <!-- Cokieeeeeeeeeeees -->
-
+      <!-- JS Search -->
       <section>
-        <!-- Slider Section -->
-        <!-- <div class="slider-wraper" id="slider-wraper">
-    
-        <div class="slider-content" id="slider-content"></div>
-      </div> -->
-
-        <div class="accordion">
-          <ul>
-            <li>
-              <div>
-                <a href="#">
-                  <h2>Albert Camus</h2>
-                  <p>"The Stranger"</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#">
-                  <h2>Friedrich Nietzsche</h2>
-                  <p>"Thus Spoke Zarathustra"</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#">
-                  <h2>Ilia Chavchavadze</h2>
-                  <p>"Is That a Man?!"</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#">
-                  <h2>Max Frisch</h2>
-                  <p>"Homo Faber"</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#">
-                  <h2>Hermann Hesse</h2>
-                  <p>"Narcissus and Goldmund"</p>
-                </a>
-              </div>
-            </li>
+        <div class="filterContainer">
+          <h1 class="roboto">Search</h1>
+          <input
+            id="search"
+            type="text"
+            name="input"
+            placeholder="Search here..."
+          />
+          <ul id="menu">
+            <li><a href="#taschen">Taschen</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#art">Art and Culture</a></li>
+            <li><a href="#language">Languages and Education</a></li>
+            <li><a href="#fantasy">Fantasy and Sci-Fi</a></li>
+            <li><a href="#classics">Classics</a></li>
+            <li><a href="#children">Children's Book</a></li>
+            <li><a href="#comics">Comics and Manga</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#sport">Sport</a></li>
+            <li><a href="#science">Science</a></li>
           </ul>
         </div>
       </section>
+      <!-- JS Search -->
 
-      <!-- EBook Section -->
-
+      <!-- Search Books -->
       <section>
-        <div class="ebook-section">
-          <div class="left-side-div">
-            <div class="ebook-title">
-              <div class="horizontal-line"></div>
-              <span>Ebook</span>
+        <div class="books-section-wrapper">
+          <div id="taschen">
+            <div class="div-title">
+              <h3>#Taschen</h3>
             </div>
-            <h2 class="roboto">
-              Access, Read, Practice & Engage with Digital Content (eBook)
-            </h2>
-            <p class="inter">
-              We give you the option to bring as many books as you like on your
-              trip, or listen to audiobooks while driving, walking, or whenever
-              you want. Visit our online library and choose a book that
-              interests you.
-            </p>
-            <p class="inter">
-              If you purchase 2 books, you will get a
-              <span class="inter">50% discount</span> on the third book, any
-              book you want.
-            </p>
-            <div class="email-ebook-div">
-              <form class="ebook-input" action="">
-                <label class="inter" for="emailfield"></label>
-                <input
-                  class="email-ebook"
-                  type="email"
-                  name="emailfield"
-                  id="emailfield"
-                  placeholder="Enter Your Email Address"
-                />
-              </form>
-              <button
-                class="login-button inter"
-                onclick="location.href='account.html'"
-              >
-                Login
-              </button>
+            <div class="book-wrapper">
+              <img src="images/book1.jpg" alt="" />
+              <img src="images/book2.jpg" alt="" />
+              <img src="images/book3.jpg" alt="" />
+              <img src="images/book4.jpg" alt="" />
             </div>
           </div>
-          <!-- <div class="ebook-picture">
-            <img src="images/ebook.avif" alt="ebook">
-          </div> -->
+
+          <div id="photography">
+            <div class="div-title">
+              <h3>#Photography</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book5.jpg" alt="" />
+              <img src="images/book6.jpg" alt="" />
+              <img src="images/book7.jpeg" alt="" />
+              <img src="images/book8.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="art">
+            <div class="div-title">
+              <h3>#Art and Culture</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book9.jpg" alt="" />
+              <img src="images/book10.jpeg" alt="" />
+              <img src="images/book11.jpg" alt="" />
+              <img src="images/book12.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="language">
+            <div class="div-title">
+              <h3>#Languages and Education</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book13.jpg" alt="" />
+              <img src="images/book14.jpeg" alt="" />
+              <img src="images/book15.png" alt="" />
+              <img src="images/book16.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="fantasy">
+            <div class="div-title">
+              <h3>#Fantasy and Sci-Fi</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book17.jpeg" alt="" />
+              <img src="images/book18.jpg" alt="" />
+              <img src="images/book19.webp" alt="" />
+              <img src="images/book20.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="classics">
+            <div class="div-title">
+              <h3>#Classics</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book21.jpeg" alt="" />
+              <img src="images/book22.webp" alt="" />
+              <img src="images/book23.jpeg" alt="" />
+              <img src="images/book24.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="children">
+            <div class="div-title">
+              <h3>#Children's Book</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book25.jpg" alt="" />
+              <img src="images/book26.jpeg" alt="" />
+              <img src="images/book27.jpg" alt="" />
+              <img src="images/book28.webp" alt="" />
+            </div>
+          </div>
+
+          <div id="comics">
+            <div class="div-title">
+              <h3>#Comics and Manga</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book29.jpeg" alt="" />
+              <img src="images/book30.jpg" alt="" />
+              <img src="images/book31.jpeg" alt="" />
+              <img src="images/book32.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div id="travel">
+            <div class="div-title">
+              <h3>#Travel</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book33.jpg" alt="" />
+              <img src="images/book34.jpg" alt="" />
+              <img src="images/book35.jpg" alt="" />
+              <img src="images/book36.jpeg" alt="" />
+            </div>
+          </div>
+
+          <div id="sport">
+            <div class="div-title">
+              <h3>#Sport</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book37.jpeg" alt="" />
+              <img src="images/book38.jpeg" alt="" />
+              <img src="images/book39.jpg" alt="" />
+              <img src="images/book40.jpg" alt="" />
+            </div>
+          </div>
+
+          <div id="science">
+            <div class="div-title">
+              <h3>#Science</h3>
+            </div>
+            <div class="book-wrapper">
+              <img src="images/book41.jpeg" alt="" />
+              <img src="images/book42.jpeg" alt="" />
+              <img src="images/book43.jpeg" alt="" />
+              <img src="images/book44.jpeg" alt="" />
+            </div>
+          </div>
         </div>
       </section>
-      <!-- EBook Section -->
-
-      <!-- Slideeeeeeeeeeeeeeeer -->
-      <section class="slider-section">
-        <div class="bestseller-div">
-          <h2>Our best selling books</h2>
-        </div>
-        <div class="slider-block">
-          <div class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carousel">
-              <img src="images/decameron.jpeg" alt="" draggable="false" />
-              <img src="images/faulkner.jpeg" alt="" draggable="false" />
-              <img src="images/salinger.jpg" alt="" draggable="false" />
-              <img src="images/harrrypotter.jpg" alt="" draggable="false" />
-              <img src="images/tolstoy.jpeg" alt="" draggable="false" />
-              <img src="images/sherlock.jpeg" alt="" draggable="false" />
-              <img src="images/marquez.jpg" alt="" draggable="false" />
-              <img src="images/thelittleprince.jpg" alt="" draggable="false" />
-              <img src="images/hamlet.jpeg" alt="" draggable="false" />
-            </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slideeeeeeeeeeeeeeeer -->
-
-      <!-- NEWS LETTER SECTION -->
-
-      <section class="newsletter-section">
-        <div class="newsletter-section-wrapper">
-          <div class="title-div">
-            <h2 class="inter">Subscribe to our newsletter</h2>
-          </div>
-          <div class="newsletter-div">
-            <p class="inter">
-              Do not miss the news in our bookstore. Leave us an email and we
-              will notify you about every interesting news, event or discount.
-            </p>
-
-            <div class="newsletter-block">
-              <form class="form-email-block" action="">
-                <label for="myemail"></label>
-                <input
-                  class="newsletter-email-input roboto"
-                  type="email"
-                  name="myemail"
-                  id="myemail"
-                  placeholder="Your Email Address"
-                />
-
-                <input
-                  class="subscribe-button roboto"
-                  type="button"
-                  value="Subscribe"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- NEWS LETTER SECTION -->
-      <!-- SCROLL TO TOP -->
-
-      <a class="to-top" href="#">
-        <i class="fa-solid fa-chevron-up"></i>
-      </a>
-
-      <!-- SCROLL TO TOP -->
-
-      <!-- FETCH  -->
-      <div id="user-list">
-        <div class="reviews">
-          <h2 class="roboto">Google Reviews</h2>
-        </div>
-      </div>
-
-      <!-- FETCH  -->
-
+      <!-- Search Books -->
       <!-- Footer -->
       <footer class="footer">
         <div class="footer-book-icon">

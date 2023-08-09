@@ -83,6 +83,13 @@
     .carousel img {
         width: calc(100% / 2);
     }
+    .question h3 {
+        line-height: 2rem;
+    }
+    .reviews {
+        margin-bottom: 50px;
+    }
+
 
 
 
@@ -120,7 +127,7 @@
     }
 
     .ebook-section {
-        height: 730px;
+        height: 750px;
     }
     .ebook-section {
         background-position: 54% 30%; 
@@ -146,7 +153,24 @@
     .carousel img {
         width: 100%;
     }
-   
+    .accordion-div-block {
+        margin-top: 130px;
+    }
+    .slider-block {
+        min-height: 80vh;
+    }
+    .bestseller-div h2 {
+        margin-bottom: 15px;
+    }
+    .bestseller-div h2 {
+        font-size: 25px;
+    }
+    .reviews {
+        margin-bottom: 60px;
+    }
+    .filterContainer {
+        padding: 3rem 1rem 0 1rem;
+    }
 
     
 }
@@ -205,6 +229,33 @@
     .card {
         width: 280px;
         height: 380px;
+    }
+    .question h3 {
+        font-size: 1.5rem;
+    }
+    .answer p {
+        line-height: 1.3;
+    } 
+    .accordion-div-block {
+        margin-top: 110px;
+    }
+    .carousel img {
+        height: 350px;
+    }
+    .slider-block {
+        min-height: 60vh;
+    }
+    .bestseller-div h2 {
+        padding-top: 50px;
+    }
+    .reviews {
+        width: 200px;
+    }
+    .reviews h2 {
+        font-size: 1.7rem;
+    }
+    .book-wrapper img {
+        width: 289px;
     }
 
     

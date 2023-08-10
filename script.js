@@ -1,12 +1,15 @@
 "use strict";
 
-// Header - Burger Bar
-const ulNavigation = document.getElementById("ul-nav");
-const burgerToggle = document.getElementById("burgerBar");
-burgerToggle.addEventListener("click", function () {
-  ulNavigation.classList.toggle("toggleNav");
-  burgerToggle.classList.toggle("activeBurger");
-});
+// Burger Bar
+export function setupBurgerBar() {
+  const ulNavigation = document.getElementById("ul-nav");
+  const burgerToggle = document.getElementById("burgerBar");
+  burgerToggle.addEventListener("click", function () {
+      ulNavigation.classList.toggle("toggleNav");
+      burgerToggle.classList.toggle("activeBurger");
+  });
+}
+
 
 // // Validation
 // const formElement = document.getElementById("registration");
@@ -286,7 +289,6 @@ burgerToggle.addEventListener("click", function () {
 // // SCROLL TO TOP
 
 // const toTop = document.querySelector(".to-top");
-
 // window.addEventListener("scroll", () => {
 //   if (window.pageYOffset > 150) {
 //     toTop.classList.add("activeTop");
@@ -294,6 +296,22 @@ burgerToggle.addEventListener("click", function () {
 //     toTop.classList.remove("activeTop");
 //   }
 // });
+
+
+
+// scroll.js
+export function setupScrollToTop() {
+  const toTop = document.querySelector(".to-top");
+  
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 150) {
+      toTop.classList.add("activeTop");
+    } else {
+      toTop.classList.remove("activeTop");
+    }
+  });
+}
+
 
 // // ACCORDION
 // const faqs = document.querySelectorAll(".faq");
@@ -426,22 +444,22 @@ burgerToggle.addEventListener("click", function () {
 
 // }
 
-const searchInput = document.getElementById('search');
-const menuItems = document.querySelectorAll('#menu li');
+// const searchInput = document.getElementById('search');
+// const menuItems = document.querySelectorAll('#menu li');
 
-searchInput.addEventListener('input', filterFunction);
+// searchInput.addEventListener('input', filterFunction);
 
-function filterFunction() {
-  const filterValue = searchInput.value.toUpperCase();
+// function filterFunction() {
+//   const filterValue = searchInput.value.toUpperCase();
 
-  menuItems.forEach(item => {
-    const link = item.querySelector('a');
-    if (link.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-      item.style.display = '';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-}
+//   menuItems.forEach(item => {
+//     const link = item.querySelector('a');
+//     if (link.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+//       item.style.display = '';
+//     } else {
+//       item.style.display = 'none';
+//     }
+//   });
+// }
 
 

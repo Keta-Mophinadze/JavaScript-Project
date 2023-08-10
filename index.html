@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="icon" href="images/icon.png">
   </head>
-  <!-- <body onload="showModal()"> -->
   <body>
+
     <header>
       <div class="header-section-wrapper">
         <div>
@@ -92,21 +92,6 @@
       </div>
     </header>
     <main>
-      <!-- Cokieeeeeeeeeeees -->
-      <div id="modalBox">
-        <i class="fa-solid fa-cookie-bite"></i>
-        <p>
-          This website uses cookies to enhance your browsing experience and
-          provide personalized content. For more information, please read our
-          Privacy Policy.
-        </p>
-        <button onclick="closeModal()" type="button">Accept</button>
-        <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
-      </div>
-
-      <div id="overlay"></div>
-
-      <!-- Cokieeeeeeeeeeees -->
 
       <section>
         <!-- Slider Section -->
@@ -288,6 +273,23 @@
 
       <!-- FETCH  -->
 
+
+      <div id="modalBox">
+        <i class="fas fa-cookie-bite"></i>
+        <p>
+          This website uses cookies to enhance your browsing experience and
+          provide personalized content. For more information, please read our
+          Privacy Policy.
+        </p>
+        <button id="acceptButton" type="button">Accept</button>
+        <i id="closeIcon" class="fas fa-times"></i>
+      </div>
+      
+      <div id="overlay"></div>
+
+
+
+
       <!-- Footer -->
       <footer class="footer">
         <div class="footer-book-icon">
@@ -412,6 +414,6 @@
       </footer>
       <!-- Footer -->
     </main>
-    <script src="script.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

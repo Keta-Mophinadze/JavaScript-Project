@@ -26,3 +26,4 @@ function filterFunction() {
   }
 
 }
+document.getElementById('search').addEventListener('input', filterFunction);

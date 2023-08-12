@@ -2,8 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Online Book Store" />
+    <meta name="author" content="Keta Mophinadze" />
+    <!-- FB Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://keta-mophinadze.github.io/JavaScript-Project/"
+    />
+    <meta property="og:type" content="Books" />
+    <meta property="og:title" content="Book Store" />
+    <meta
+      property="og:description"
+      content="Find Your Favourite Books In Our Library"
+    />
+    <meta
+      property="og:image"
+      content="https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2020/06/10044334/shutterstock_1718964076-1024x683.jpg"
+    />
+    <!-- FB Meta Tags -->
+    <title>Books</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -55,7 +75,8 @@
         </div>
       </div>
       <hr class="header-line" />
-      <!-- NAVIGATION -->
+
+      <!-- Navigation -->
       <div class="header-navigation-wrapper">
         <nav>
           <ul class="ul-item inter" id="ul-nav">
@@ -63,9 +84,7 @@
               <a class="header-a-item home" href="index.html">Home</a>
             </li>
             <li>
-              <a class="header-a-item about-us" href="search.html"
-                >Search</a
-              >
+              <a class="header-a-item about-us" href="search.html">Search</a>
             </li>
             <li>
               <a class="header-a-item books nav-active" href="books.html"
@@ -83,11 +102,10 @@
           <div class="line line3"></div>
         </div>
       </div>
+      <!-- Navigation -->
     </header>
     <main>
-
-      <!-- TITLE SECTION -->
-
+      <!-- Title -->
       <section>
         <div class="books-title">
           <h2>"A room without books is like a body without a soul."</h2>
@@ -95,40 +113,36 @@
         </div>
         <div class="books-text-div">
           <h3>
-            We offer a wide selection of books. Our library is designed for any type of reader. Choose your favorite book and enjoy the reading process.
+            We offer a wide selection of books. Our library is designed for any
+            type of reader. Choose your favorite book and enjoy the reading
+            process.
           </h3>
         </div>
       </section>
+      <!-- Title -->
 
-
-
-      <!-- boooooooook -->
+      <!-- Books -->
       <section>
-  <div id="card-container">
-</div>
-<div class="showing-number inter">
-  <span>Showing 
-    <span id="card-count"></span> of 
-    <span id="card-total"></span> items      
-  </span>
-</div>
-<div class="card-actions">
- 
-  <button id="load-more">Load more</button>
-  
-</div>
-</section>
+        <div id="card-container"></div>
+        <div class="showing-number inter">
+          <span
+            >Showing <span id="card-count"></span> of
+            <span id="card-total"></span> items
+          </span>
+        </div>
+        <div class="card-actions">
+          <button id="load-more">Load more</button>
+        </div>
+      </section>
+      <!-- Books -->
 
-     <!-- boooooooook -->
+      <!-- Scroll To Top -->
 
-       <!-- SCROLL TO TOP -->
-
-       <a class="to-top" href="#">
+      <a class="to-top" href="#">
         <i class="fa-solid fa-chevron-up"></i>
       </a>
 
-      <!-- SCROLL TO TOP -->
-      
+      <!-- Scroll To Top -->
 
       <!-- Footer -->
       <footer class="footer">

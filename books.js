@@ -1,14 +1,14 @@
-import {setupBurgerBar} from './script.js';
+"use strict";
 
+// Burger Bar
+import { setupBurgerBar } from "./script.js";
 setupBurgerBar();
 
 // Scroll To Top
-import { setupScrollToTop } from './script.js';
+import { setupScrollToTop } from "./script.js";
 setupScrollToTop();
 
-
-// // -------------------
-
+// Books
 const cardContainer = document.getElementById("card-container");
 const loadMoreButton = document.getElementById("load-more");
 const cardCountElem = document.getElementById("card-count");
@@ -19,7 +19,7 @@ const cardIncrease = 9;
 const pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
 
-  const itemFunsction = () => {
+const itemFunsction = () => {
   const h = Math.floor(Math.random() * 360);
   return `hsl(${h}deg, 90%, 85%)`;
 };
@@ -96,6 +96,7 @@ const addCards = (pageIndex) => {
     pageIndex * cardIncrease > cardLimit ? cardLimit : pageIndex * cardIncrease;
 
   cardCountElem.innerHTML = endRange;
+  cardTotalElem.innerHTML = cardLimit;
 
   for (let i = startRange + 1; i <= endRange; i++) {
     createCard(i);

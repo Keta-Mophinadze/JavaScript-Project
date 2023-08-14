@@ -73,7 +73,7 @@ arrowIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
     let firstImgWidth = firstImg.clientWidth + 14;
     carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-    setTimeout(() => showHiddenIcons(), 60);
+    setTimeout(() => showHiddenIcons(), 40);
   });
 });
 

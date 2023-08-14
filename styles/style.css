@@ -229,12 +229,12 @@
 #modalBox button:hover {
     box-shadow: 0 0.625rem 0.938rem rgba(0, 0, 0, 0.2);
 }
-.fa-xmark {
+#closeIcon {
     width: 2.813rem;
     height: 2.813rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1.125rem;
+    right: 0.313rem;
     cursor: pointer;
     color: #10314d;
 }

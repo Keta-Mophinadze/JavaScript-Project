@@ -1,9 +1,9 @@
 .inter {
-    font-family: Inter;
+    font-family: 'Inter';
     font-style: normal;
 }
 .roboto {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
 }
 .header-section-wrapper {
@@ -80,8 +80,9 @@
     border: 0.063rem solid #E0E0E0; 
     margin: 2.375rem auto 1rem auto;
 }
-/* Navigation */
 
+
+/* Navigation */
 .header-navigation-wrapper {
     padding: 0 2.5rem;
     position: relative;
@@ -166,9 +167,11 @@
 .activeBurger .line2 {
     display: none;
 }
+/* Navigation */
 
-/* Cookies */
 
+
+/* Cookie Notification */
 #overlay {
     position: fixed;
     top: 0;
@@ -186,20 +189,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 450px;
+    max-width: 28.125rem;
     text-align: center;
-    padding: 80px 60px;
-    font-size: 18px;
+    padding: 5rem 3.75rem;
+    font-size: 1.125rem;
     font-weight: 500;
     z-index: 100;
     background: white;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: none;
 }
 .fa-cookie-bite {
-    font-size: 70px;
+    font-size: 4.375rem;
     color: #10314d;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 #modalBox p {
     font-weight: 500;
@@ -207,42 +210,36 @@
     line-height: 1.4rem;
     font-family: 'Josefin Sans', sans-serif;
     color: #3a5d7c;
-
 }
 #modalBox button {
     font-family: 'Josefin Sans';
     background-color: #10314d;
     color: #FFFFFF;
-    padding: 15px 0;
-    border-radius: 4px;
-    font-size: 20px;
+    padding: 0.938rem 0;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
     font-weight: 500;
     width: 100%;
     border: 0;
     outline: 0;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     cursor: pointer;
     transition: all 0.25s;
 }
 #modalBox button:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.625rem 0.938rem rgba(0, 0, 0, 0.2);
 }
 .fa-xmark {
-    width: 45px;
-    height: 45px;
+    width: 2.813rem;
+    height: 2.813rem;
     position: absolute;
     top: 0;
     right: 0;
     cursor: pointer;
     color: #10314d;
 }
-
-
-
-
-
-
 /* Cookies */
+
 
 /* Middle Section */
 .middle-section {
@@ -267,7 +264,7 @@
 .sign-up-block {
     max-width: 37.5rem;
     width: 100%;
-    margin: 80px auto 0 auto;
+    margin: 5rem auto 0 auto;
     text-align: center;
 }
 .sign-up-block h3 {
@@ -494,130 +491,120 @@
     height: 0.938rem;
     margin: 0 0.813rem;
 }
+/* Footer */
 
 
-/* E BOOKS SECTION */
+/* Ebook Section */
 .ebook-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    max-width: 1449px;
+    padding-left: 3.125rem;
+    max-width: 90.563rem;
     width: 100%;
-    margin: 100px auto 0 auto;
+    margin: 6.25rem auto 0 auto;
     background-image: url(../images/conversation_journalstory_0.jpeg);
-    background-size: cover; /* Adjust as needed */
-    background-position: right; /* Position the background image to the right and center it vertically */
-    height: 600px;
-  }
-  
+    background-size: cover; 
+    background-position: right;
+    height: 37.5rem;
+}
 .ebook-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80px;
+    width: 5rem;
 }
 .horizontal-line {
   border-top: 1.5px solid #a11010;
-  width: 20px; 
+  width: 1.25rem; 
 }
 .ebook-title span {
     color: #a11010;
     font-family: 'Open Sans SemiCondensed';
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.4px;
-    margin: 0 0 4px 12px;
-
+    margin: 0 0 0.25rem 0.75rem;
 }
 .left-side-div {
-    max-width: 627px;
+    max-width: 39.188rem;
     width: 100%;
 }
 .left-side-div h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 50px;
+    line-height: 3.125rem;
     letter-spacing: 0.9px;
     color: #173F5F;
-    max-width: 600px;
+    max-width: 37.5rem;
     width: 100%;
 }
 .left-side-div p {
     color: #265d8a;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
-    max-width: 627px;
+    line-height: 2rem;
+    max-width: 39.188rem;
     width: 100%;
-    margin: 4px 0;
+    margin: 0.25rem 0;
 }
 .left-side-div span {
     color: #a11010;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
-
+    line-height: 2rem;
 }
 .email-ebook {
     width: 70%;
-    height: 42px;
+    height: 2.625rem;
     outline: none;
     background: #FFF;
-    padding-left: 7px;
+    padding-left: 0.438rem;
     border: none;
-    border-radius: 4px;
-    
+    border-radius: 0.25rem;
 }
 .email-ebook::placeholder {
     color: #BCBCBC;
-    font-family: Inter;
-    font-size: 13px;
+    font-family: 'Inter';
+    font-size: 0.813rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.68px;
     text-transform: capitalize;
-  }
-  .login-button {
-    width: 153px;
-    height: 42px;
-    border-radius: 4px;
+}
+.login-button {
+    width: 9.563rem;
+    height: 2.625rem;
+    border-radius: 0.25rem;
     border: none;
     background-color: #a11010;
     color: #FFF;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.2px;
     cursor: pointer;
     transition: all 0.15s;
-    margin-top: 8px;
-
+    margin-top: 0.5rem;
   }
-
-  .login-button:hover {
+.login-button:hover {
     opacity: 0.9;
-
-  }
-
-  .email-ebook-div {
+}
+.email-ebook-div {
     align-items: center;
-    margin-top: 34px;
-  }
+    margin-top: 2.125rem;
+}
+/* Ebook Section */
 
 
-
-
-/* E BOOKS SECTION */
-
-/* NEWS LETTER SECTION */
+/* Newsletter Section */
 .newsletter-section {
     background: #f0f5f5;
 }
@@ -625,50 +612,48 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
+    max-width: 81.25rem;
     width: 100%;
     margin: 0 auto;
-    padding: 80px;
+    padding: 5rem;
 }
 .title-div {
-    max-width: 380px;
-    width: 100%;
-    
+    max-width: 23.75rem;
+    width: 100%; 
 }
 .title-div h2 { 
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 4.375rem;
     text-transform: capitalize;
     color: #173F5F;
 }
 .newsletter-div p {
     color: #7A7A7A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 208%; 
     letter-spacing: 0.4px;
 }
 .newsletter-div {
-    max-width: 500px;
+    max-width: 31.25rem;
     width: 100%;
 }
 .form-email-block input::placeholder {
   color: #9a9a9a;
-  font-size: 13px;
+  font-size: 0.813rem;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.68px;
   text-transform: capitalize;
 }
-
 .newsletter-email-input {
     border: none;
     outline: none;
     max-width: 13.75rem;
     width: 100%;
     height: 2rem;
-    border-radius: 4px 0 0 4px;
+    border-radius: 0.25rem 0 0 0.25rem;
     font-weight: 700;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -676,47 +661,38 @@
     padding-left: 0.938rem;
 }
 .subscribe-button {
-    width: 140px;
+    width: 8.75rem;
     height: 2rem;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.875rem;
     color: #FFFFFF;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 0.25rem 0.25rem 0;
     border: none;
     background-color: #a11010;
     cursor: pointer;
     margin-left: -5px;
-   
 }
 .subscribe-button:hover {
     opacity: 0.8;
 }
 .form-email-block {
-    margin-top: 15px;
-    max-width: 364px;
+    margin-top: 0.938rem;
+    max-width: 22.75rem;
     width: 100%;
     display: flex;
     align-items: center;
-
-
 }
-
-  
-  
-
-
-/* NEWS LETTER SECTION */
+/* Newsletter Section */
 
 
 /* Accordion Slider */
-
 .accordion {
     width: 100%;
-    height: 520px;
+    height: 32.5rem;
     overflow: hidden;
-    margin: 50px auto;
-  }
+    margin: 3.125rem auto;
+}
 .accordion ul {
     width: 100%;
     display: table;
@@ -729,7 +705,7 @@
     vertical-align: bottom;
     position: relative;
     width: 16.666%;
-    height: 520px;
+    height: 32.5rem;
     background-repeat: no-repeat;
     background-position: center center;
     transition: all 500ms ease;
@@ -741,15 +717,15 @@
 }
 .accordion ul li div a {
     display: block;
-    height: 520px;
+    height: 32.5rem;
     width: 100%;
     position: relative;
     z-index: 3;
-    padding: 250px 20px;
+    padding: 15.625rem 1.25rem;
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
-    font-family: Open Sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition: all 200ms ease;
 }
 .accordion ul li div a * {
@@ -767,17 +743,17 @@
 .accordion ul li div a h2 {
     font-family: 'Open Sans SemiCondensed';
     text-overflow: clip;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 2px;
-    top: 160px;
+    margin-bottom: 0.125rem;
+    top: 10rem;
     letter-spacing: 1.4px;
-  }
+}
 .accordion ul li div a p {
-    top: 160px;
+    top: 10rem;
     font-size: 13.5px;
     font-family: 'Roboto';
-    font-size: 15px;
+    font-size: 0.938rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -801,86 +777,76 @@
   opacity: 1;
   transform: translateX(0);
 }
+/* Accordion Slider */
 
 
-/* ---------- title section */
+/* Books Section - Title */
 .books-title {
     font-family: 'Edu SA Beginner';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.4px;
-    max-width: 440px;
+    max-width: 27.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 80px auto 20px auto;
-  }
-  
-  .books-title h2 {
-    margin: 4px; /* To remove any default margin on the heading */
-  }
+    margin: 5rem auto 1.25rem auto;
+}
+.books-title h2 {
+    margin: 0.25rem; 
+}
 .books-text-div {
-    max-width: 770px;
+    max-width: 48.125rem;
     width: 100%;
-    margin: 23px auto 50px auto;
+    margin: 1.438rem auto 3.125rem auto;
     font-family: 'Open Sans SemiCondensed';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.4px;
     text-align: center;
 }
+/* Books Section - Title */
 
-  
 
-/* Books - Book Section */
+/* Books Section */
 #card-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 62.5rem;
     width: 100%;
     margin: 0 auto;
-
-  }
-  
-  .card {
-    /* height: 55vh;
-    width: calc((100% / 3) - 16px); */
-    width: 300px;
-    height: 450px;
-    /* margin: 8px; */
+}
+.card {
+    width: 18.75rem;
+    height: 28.125rem;
     border-radius: 3px;
     transition: all 200ms ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover; /* Adjust the value as needed */
-    background-position: center; /* Adjust the value as needed */
+    background-size: cover; 
+    background-position: center; 
     cursor: pointer;
-    margin: 0 auto 25px auto;
-  }
-  
-
-  
-  .card:hover {
+    margin: 0 auto 1.563rem auto;
+}
+.card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-actions {
-    margin: 8px;
-    padding: 16px 0;
+}
+.card-actions {
+    margin: 0.5rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  #load-more {
-    width: 250px;
-    padding: 16px;
+}
+#load-more {
+    width: 15.625rem;
+    padding: 1rem;
     background: rgb(104, 168, 164);
     color: #000000;
     border: none;
@@ -892,18 +858,15 @@
     letter-spacing: 0.15rem;
     margin: 0 auto;
     font-family: 'Roboto';
-    font-weight: 900;
-    
-  }
-  
-  #load-more:not([disabled]):hover {
+    font-weight: 900; 
+}
+#load-more:not([disabled]):hover {
     box-shadow: 0 1px 9px rgba(0, 0, 0, 0.2);
-  }
-  
-  #load-more[disabled] {
+}
+#load-more[disabled] {
     background-color: #eaeaea !important;
-  }
-  .showing-number span {
+}
+.showing-number span {
     max-width: 36.25rem;
     width: 90%;
     margin: 7.5rem auto 0 auto;
@@ -913,32 +876,14 @@
     font-weight: 900;
     font-size: 1.2rem;
     line-height: 1.5rem;
-  }
-  .showing-number {
+}
+.showing-number {
     padding-left: 1rem;
-  }
-
-  
-  
-  
-  
-
-
-
-
-
-
-/* Books - Book Section */
-
-
-
-
+}
+/* Books Section */
 
 
 /* Slider */
-/* .bestseller-div {
-    position: relative;
-} */
 .bestseller-div h2 {
     font-family: 'Open Sans SemiCondensed';
     max-width: 36.25rem;
@@ -946,47 +891,34 @@
     margin: 0 auto;
     text-align: center;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 2.188rem;
     line-height: 1.5rem;
     color: #FFFFFF;
     text-transform: capitalize;
-    padding-top: 70px;
+    padding-top: 4.375rem;
     margin-bottom: -50px;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 .slider-section {
     background: rgb(28, 59, 87);
-    margin: 100px 0;
-
-   
+    margin: 6.25rem 0;
 }
 .slider-block {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 0 35px
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+    padding: 0 2.188rem;
 }
 .wrapper {
-    max-width: 1200px;
+    max-width: 75rem;
     position: relative;
 }
 .wrapper i {
     top: 50%;
-    height: 46px;
-    width: 46px;
+    height: 2.875rem;
+    width: 2.875rem;
     text-align: center;
-    line-height: 46px;
+    line-height: 2.875rem;
     background: #fff;
     color: #33445d;
     border-radius: 50%;
@@ -1017,32 +949,33 @@
     pointer-events: none;
 }
 .carousel img {
-    /* height: 240px; */
-    height: 500px;
+    height: 31.25rem;
     object-fit: cover;
     width: calc(98% / 3);
-    margin-left: 14px;
+    margin-left: 0.875rem;
     object-position: 50% 20%;
 }
 .carousel img:first-child {
     margin-left: 0px;
 }
+/* Slider */
 
-/* Scroll to top */
+
+/* Scroll To Top */
 html {
     scroll-behavior: smooth;
 }
 .to-top {
     position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 40px;
-    height: 40px;
+    bottom: 1rem;
+    right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     background: #ffffff;
     color: black;
     opacity: 0;
@@ -1051,22 +984,21 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .to-top.activeTop {
-    bottom: 32px;
+    bottom: 2rem;
     pointer-events: auto;
     opacity: 1;
 }
+/* Scroll To Top */
 
 
-
-/* ACCORDION  */
+/* FAQ Accordion  */
 .accordion-div-block {
     width: 80%;
     min-height: 100vh;
-    margin: 70px auto 0 auto;
+    margin: 4.375rem auto 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
 }
 .title {
     font-family: 'Open Sans SemiCondensed';
@@ -1076,22 +1008,18 @@ html {
     font-weight: 700;
     line-height: 1.5rem;
     color: #343e54;
-
-
     font-size: 3rem;
     margin: 6rem 0 2rem 0;
-    
 }
 .accordion-div-block h2 {
     font-weight: 900;
     line-height: 1.5rem;
     color: #343e54;
     font-size: 1.5rem;
-    margin: 13px 0 25px 0;
-
+    margin: 0.813rem 0 1.563rem 0;
 }
 .faq {
-    max-width: 700px;
+    max-width: 43.75rem;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #343e54;
@@ -1104,7 +1032,6 @@ html {
 }
 .question h3 {
     font-size: 1.8rem;
-    font-weight: 900;
     color: #343e54;
     font-weight: 700;
     line-height: 1.5rem;
@@ -1125,7 +1052,6 @@ html {
     font-size: 1.4rem;
 }
 .faq.activeAccordion .answer {
-    /* max-height: 300px; */
     max-height: 400px;
     animation: fade 1s ease-in-out;
 }
@@ -1144,26 +1070,14 @@ i {
         opacity: 1;
         transform: translateY(0);
     }
-    
  }
+/* FAQ Accordion  */
 
-
-
-
-
-
-
-
-/* ACCORDION  */
-
-
-
-
-/* FETCH */
+/* Fetch */
 .reviews {
-    max-width: 240px;
+    max-width: 15rem;
     width: 100%;
-    margin: 100px auto 30px auto;
+    margin: 6.25rem auto 1.875rem auto;
 }
 .reviews h2 {
     font-size: 2rem;
@@ -1172,19 +1086,18 @@ i {
     color: #002746;
 }
 #user-list {
-    max-width: 900px;
+    max-width: 56.25rem;
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
-
+    padding: 0 1.875rem;
 }
 .user-name {
     font-size: 1.5rem;
     color: #002746;
     font-weight: 900;
     line-height: 1.4rem;
-    margin-bottom: 6px;
-    font-family: Roboto;
+    margin-bottom: 0.375rem;
+    font-family: 'Roboto';
     font-style: normal;
 }
 .user-info {
@@ -1193,7 +1106,7 @@ i {
     line-height: 1.4rem;
     color: #002746;
     font-family: 'Josefin Sans';
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
     font-style: normal;
 }
 .review {
@@ -1201,10 +1114,13 @@ i {
     font-size: 1.3rem;
     line-height: 1.5;
     color: #002746;
-    margin-bottom: 30px;
-    font-family: Roboto;
+    margin-bottom: 1.875rem;
+    font-family: 'Roboto';
     font-style: normal;
 }
+/* Fetch */
+
+
 
 /* JS Search */
 .filterContainer {
@@ -1262,6 +1178,8 @@ i {
     color: #000000; 
 }
 /* JS Search */
+
+
 
 /* Search Books */
 .books-section-wrapper {

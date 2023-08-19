@@ -110,31 +110,30 @@ userNameField.addEventListener("keyup", function () {
 });
 
 
-// cookie npm
+// // cookie npm
 // import Cookies from './js-cookie';
-import Cookies from './node_modules/js-cookie';
 
-const registrationForm = document.getElementById('registration');
+// const registrationForm = document.getElementById('registration');
 
-registrationForm.addEventListener('submit', function (event) {
-  event.preventDefault();
+// registrationForm.addEventListener('submit', function (event) {
+//   event.preventDefault();
 
-  const userName = document.getElementById('myname').value;
-  const userEmail = document.getElementById('myemail').value;
+//   const userName = document.getElementById('myname').value;
+//   const userEmail = document.getElementById('myemail').value;
 
-  Cookies.set('userName', userName);
-  Cookies.set('userEmail', userEmail);
-});
+//   Cookies.set('userName', userName);
+//   Cookies.set('userEmail', userEmail);
+// });
 
-window.addEventListener('load', function () {
-  const userName = Cookies.get('userName');
-  const userEmail = Cookies.get('userEmail');
+// window.addEventListener('load', function () {
+//   const userName = Cookies.get('userName');
+//   const userEmail = Cookies.get('userEmail');
 
-  if (userName) {
-    document.getElementById('myname').value = userName;
-  }
+//   if (userName) {
+//     document.getElementById('myname').value = userName;
+//   }
 
-  if (userEmail) {
-    document.getElementById('myemail').value = userEmail;
-  }
-});
+//   if (userEmail) {
+//     document.getElementById('myemail').value = userEmail;
+//   }
+// });

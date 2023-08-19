@@ -130,17 +130,20 @@
 .burger-bar {
     position: absolute;
     right: 0.625rem;
-    width: 2.188rem;
-    height: 3.125rem;
+    width: 2.813rem;
+    height: 2.813rem;
     display: none;
     cursor: pointer;
     margin-right: 0.938rem;
+    margin-top: 0.625rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .header-navigation-wrapper {
     z-index: 10;
 }
 .line {
-    width: 80%;
+    width: 55%;
     height: 0.125rem;
     background-color: #173F5F;
     position: absolute;

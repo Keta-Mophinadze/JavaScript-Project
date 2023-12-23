@@ -1,11 +1,11 @@
 "use strict";
 
 // Burger Bar
-import { setupBurgerBar } from "./script.js";
+import { setupBurgerBar } from "../script.js";
 setupBurgerBar();
 
 // Scroll To Top
-import { setupScrollToTop } from "./script.js";
+import { setupScrollToTop } from "../script.js";
 
 setupScrollToTop();
 

@@ -1,11 +1,11 @@
 "use strict";
 
 // Burger Bar
-import { setupBurgerBar } from "./script.js";
+import { setupBurgerBar } from "../script.js";
 setupBurgerBar();
 
 // Scroll To Top
-import { setupScrollToTop } from "./script.js";
+import { setupScrollToTop } from "../script.js";
 setupScrollToTop();
 
 // Form Validation
@@ -108,32 +108,3 @@ userNameField.addEventListener("keyup", function () {
     userNameError.innerHTML = " ";
   }
 });
-
-
-// // cookie npm
-// import Cookies from './js-cookie';
-
-// const registrationForm = document.getElementById('registration');
-
-// registrationForm.addEventListener('submit', function (event) {
-//   event.preventDefault();
-
-//   const userName = document.getElementById('myname').value;
-//   const userEmail = document.getElementById('myemail').value;
-
-//   Cookies.set('userName', userName);
-//   Cookies.set('userEmail', userEmail);
-// });
-
-// window.addEventListener('load', function () {
-//   const userName = Cookies.get('userName');
-//   const userEmail = Cookies.get('userEmail');
-
-//   if (userName) {
-//     document.getElementById('myname').value = userName;
-//   }
-
-//   if (userEmail) {
-//     document.getElementById('myemail').value = userEmail;
-//   }
-// });

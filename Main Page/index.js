@@ -1,55 +1,32 @@
-
-// index.js
-
-import {setupBurgerBar} from './script.js';
+// Burger Bar
+import { setupBurgerBar } from "../script.js";
 setupBurgerBar();
 
 // Scroll To Top
-import { setupScrollToTop } from './script.js';
+import { setupScrollToTop } from "../script.js";
 setupScrollToTop();
 
-
-
-
-// //  Cookies
-// const modalBox = document.getElementById('modalBox');
-// const overlay = document.getElementById('overlay');
-
-// const showModal = async () => {
-//   await new Promise(resolve => setTimeout(resolve, 800));
-//   modalBox.style.display = 'block';
-//   overlay.style.display = 'block';
-// };
-
-// const closeModal = () => {
-//   modalBox.style.display = 'none';
-//   overlay.style.display = 'none';
-// };
-
-// window.onload = showModal;
-
-const modalBox = document.getElementById('modalBox');
-const overlay = document.getElementById('overlay');
-const acceptButton = document.getElementById('acceptButton');
-const closeIcon = document.getElementById('closeIcon');
+//  Cookies
+const modalBox = document.getElementById("modalBox");
+const overlay = document.getElementById("overlay");
+const acceptButton = document.getElementById("acceptButton");
+const closeIcon = document.getElementById("closeIcon");
 
 const showModal = async () => {
-  await new Promise(resolve => setTimeout(resolve, 800));
-  modalBox.style.display = 'block';
-  overlay.style.display = 'block';
+  await new Promise((resolve) => setTimeout(resolve, 800));
+  modalBox.style.display = "block";
+  overlay.style.display = "block";
 };
 
 const closeModal = () => {
-  modalBox.style.display = 'none';
-  overlay.style.display = 'none';
+  modalBox.style.display = "none";
+  overlay.style.display = "none";
 };
 
 window.onload = showModal;
 
-acceptButton.addEventListener('click', closeModal);
-closeIcon.addEventListener('click', closeModal);
-
-
+acceptButton.addEventListener("click", closeModal);
+closeIcon.addEventListener("click", closeModal);
 
 // Slider
 const carousel = document.querySelector(".carousel"),
@@ -125,18 +102,15 @@ carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-
-
-
 // FETCH
 const userListDiv = document.getElementById("user-list");
 
-fetch("https://jsonplaceholder.typicode.com/users", {
-  method: "GET",
-})
+fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => {
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error(
+        "Unable to retrieve data: Server response indicates an issue."
+      );
     }
     return response.json();
   })
@@ -147,7 +121,7 @@ fetch("https://jsonplaceholder.typicode.com/users", {
     });
   })
   .catch((error) => {
-    console.error("There was a problem with the fetch operation:", error);
+    console.error("Error occurred while fetching data:", error);
   });
 
 function generateRandomComment() {

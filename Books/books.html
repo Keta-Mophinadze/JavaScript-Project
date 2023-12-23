@@ -23,26 +23,27 @@
       content="https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2020/06/10044334/shutterstock_1718964076-1024x683.jpg"
     />
     <!-- FB Meta Tags -->
-    <title>Log In</title>
+    <title>Books</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="icon" href="../images/icon.png" />
   </head>
   <body>
     <header>
       <div class="header-section-wrapper">
         <div>
-          <a href="index.html">
+          <a href="../Main Page/index.html">
             <i class="fa-solid fa-book-open-reader"></i>
           </a>
         </div>
         <div class="header-input-wrapper">
-          <form action="">
+          <form action="/search" method="GET">
             <label for="searchInput"></label>
             <input
               type="search"
@@ -55,7 +56,7 @@
         </div>
         <div class="header-icon-wrapper">
           <div>
-            <a href="account.html" target="_blank">
+            <a href="../Account/account.html">
               <i class="fa-regular fa-user"></i>
               <span class="header-span-tag inter">Account</span>
             </a>
@@ -75,20 +76,30 @@
         </div>
       </div>
       <hr class="header-line" />
+
+      <!-- Navigation -->
       <div class="header-navigation-wrapper">
         <nav>
           <ul class="ul-item inter" id="ul-nav">
             <li>
-              <a class="header-a-item home" href="index.html">Home</a>
+              <a class="header-a-item home" href="../Main Page/index.html"
+                >Home</a
+              >
             </li>
             <li>
-              <a class="header-a-item about-us" href="search.html">Search</a>
+              <a class="header-a-item about-us" href="../Search/search.html"
+                >Search</a
+              >
             </li>
             <li>
-              <a class="header-a-item books" href="books.html">Books</a>
+              <a
+                class="header-a-item books nav-active"
+                href="../Books/books.html"
+                >Books</a
+              >
             </li>
             <li>
-              <a class="header-a-item blog" href="faq.html">FAQ</a>
+              <a class="header-a-item blog" href="../FAQ/faq.html">FAQ </a>
             </li>
           </ul>
         </nav>
@@ -98,114 +109,52 @@
           <div class="line line3"></div>
         </div>
       </div>
+      <!-- Navigation -->
     </header>
     <main>
-      <!-- Middle Section -->
+      <!-- Title -->
       <section>
-        <div class="middle-section">
-          <p>
-            Sign up and find your favorite book or vinyl in our bookstore. Our
-            bookstore will help you build a wonderful collection.
-          </p>
+        <div class="books-title">
+          <h2>"A room without books is like a body without a soul."</h2>
+          <span>Marcus Tullius Cicero</span>
+        </div>
+        <div class="books-text-div">
+          <h3>
+            We offer a wide selection of books. Our library is designed for any
+            type of reader. Choose your favorite book and enjoy the reading
+            process.
+          </h3>
         </div>
       </section>
-      <!-- Middle Section -->
+      <!-- Title -->
 
-      <!-- Registration Form -->
+      <!-- Books -->
       <section>
-        <div class="sign-up-block">
-          <h3 class="roboto">Sign up</h3>
-          <div class="apple-div">
-            <i class="fa-brands fa-apple"></i>
-            <span class="roboto">Continue With Apple</span>
-          </div>
-          <div class="fb-div">
-            <i class="fa-brands fa-facebook"></i>
-            <span class="roboto">Continue With Facebook</span>
-          </div>
-
-          <p class="roboto account-text">Or create an account</p>
+        <div id="card-container"></div>
+        <div class="showing-number inter">
+          <span
+            >Showing <span id="card-count"></span> of
+            <span id="card-total"></span> items
+          </span>
         </div>
-        <div class="form-wrapper">
-          <form class="form-element" action="" id="registration" method="POST">
-            <div class="input-wrapper">
-              <label class="roboto label-item" for="myname">User Name</label>
-
-              <input class="input-item" type="text" name="myname" id="myname" />
-              <p id="userNameError" class="roboto"></p>
-              <p class="error-text roboto" id="error-myname"></p>
-            </div>
-
-            <div class="input-wrapper">
-              <label class="roboto label-item" for="myemail">Email</label>
-              <input
-                class="input-item"
-                type="email"
-                name="myemail"
-                id="myemail"
-              />
-              <p class="roboto" id="emailError"></p>
-              <p class="error-text roboto" id="error-myemail"></p>
-            </div>
-
-            <div class="password-input input-wrapper">
-              <label class="roboto label-item" for="mypassword">Password</label>
-              <input
-                class="input-item"
-                type="password"
-                name="mypassword"
-                id="mypassword"
-              />
-              <i class="fa-solid fa-eye" id="passwordIcon"></i>
-              <p class="error-text roboto" id="error-mypassword"></p>
-            </div>
-
-            <div class="input-wrapper">
-              <label class="roboto label-item" for="mypassword2"
-                >Repeat Password</label
-              >
-              <input
-                class="input-item"
-                type="password"
-                name="mypassword2"
-                id="mypassword2"
-              />
-              <p class="error-text roboto" id="error-mypassword2"></p>
-            </div>
-
-            <div class="check-box-wrapper">
-              <label for="checkBox"></label>
-              <input
-                class="checkbox"
-                type="checkbox"
-                name="check"
-                id="checkBox"
-              />
-
-              <p class="roboto checkbox-text">
-                I have read and agree to the
-                <span class="terms">Terms and Conditions</span>
-              </p>
-            </div>
-            <p class="error-text roboto" id="error-check"></p>
-            <button class="roboto submit-button" type="submit">Submit</button>
-          </form>
+        <div class="card-actions">
+          <button id="load-more">Load more</button>
         </div>
       </section>
-      <!-- Registration Form -->
+      <!-- Books -->
 
-      <!-- Scroll To Top-->
+      <!-- Scroll To Top -->
 
       <a class="to-top" href="#">
         <i class="fa-solid fa-chevron-up"></i>
       </a>
 
-      <!-- Scroll To Top-->
+      <!-- Scroll To Top -->
 
       <!-- Footer -->
       <footer class="footer">
         <div class="footer-book-icon">
-          <a href="index.html">
+          <a href="../Main Page/index.html">
             <i class="fa-solid fa-book-open-reader"></i>
           </a>
         </div>
@@ -298,6 +247,7 @@
               <a
                 class="a-item-footer"
                 href="https://www.facebook.com/kulturkaufhaus/"
+                target="_blank"
               >
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -305,12 +255,14 @@
               <a
                 class="a-item-footer"
                 href="https://www.youtube.com/user/KulturKaufhaus"
+                target="_blank"
               >
                 <i class="fa-brands fa-youtube"></i>
               </a>
               <a
                 class="a-item-footer"
                 href="https://www.instagram.com/dussmann.official/"
+                target="_blank"
               >
                 <i class="fa-brands fa-instagram"></i>
               </a>
@@ -326,6 +278,6 @@
       </footer>
       <!-- Footer -->
     </main>
-    <script type="module" src="account.js"></script>
+    <script type="module" src="books.js"></script>
   </body>
 </html>

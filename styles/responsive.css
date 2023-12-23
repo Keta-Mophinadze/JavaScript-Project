@@ -41,8 +41,6 @@
 }
 
 
-
-
 @media (max-width:768px) {
     .header-section-wrapper {
         padding-left: 0.313rem;
@@ -95,16 +93,15 @@
         display: block;
     }
     .left-side-div {
-        width: 23.75rem;
         width: 80%;
     }
     .title-div h2 {
         font-size: 1.625rem;
+        line-height: 2.2rem;
+        margin-bottom: 0.5rem;
     }
     .ebook-section {
         height: 46.875rem;
-    }
-    .ebook-section {
         background-position: 54% 30%; 
     }
     .form-email-block {
@@ -149,21 +146,26 @@
     .accordion {
         margin-top: 8.125rem;
     }
-    .question h3 {
+    /* .question h3 {
         font-size: 1.5rem;
-    }
+    } */
     .answer p,
     .answer p span {
         font-size: 1.3rem;
     }
+    .middle-section {
+        margin-top: 6.5rem;    
+    }
+    .form-wrapper,
+    .sign-up-block {
+        padding: 0 1.25rem;
+    }
 }
-
-
 
 
 @media (max-width:320px) {
     .burger-bar {
-        width: 1.875rem;
+        width: 2.5rem;
         height: 2.5rem;
     }
     .footer-wrapper {
@@ -171,10 +173,6 @@
     }
     .social-media-icons {
         align-items: flex-start;
-    }
-    .form-wrapper,
-    .sign-up-block {
-        padding: 0 1.25rem;
     }
     .left-side-div {
         margin: 0;
@@ -207,9 +205,9 @@
         width: 17.5rem;
         height: 23.75rem;
     }
-    .question h3 {
+    /* .question h3 {
         font-size: 1.3rem;
-    }
+    } */
     .answer p,
     .answer p span {
         line-height: 1.6rem;
